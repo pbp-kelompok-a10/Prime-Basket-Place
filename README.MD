@@ -133,25 +133,26 @@ Hanya pengguna terdaftar yang bisa menulis review.
 
 ---
 
-### 🧾 **Detail Product**
+### 🧾 **Product Catalog**
 
 🧠 **Deskripsi:**  
-Modul ini memuat informasi detail mengenai suatu produk basket.  
-Terdapat fitur **masukkan keranjang** dan **love button** untuk menandai produk favorit.  
-Selain itu, template dari **Review App** ditampilkan di bagian bawah halaman detail produk.  
+Modul ini memuat katalog produk basket yang memungkinkan pengguna melihat detail produk, memberikan review
+pada produk, dan memberikan rating pada produk
 
 ⚙️ **Fitur Utama:**  
 - Menampilkan detail lengkap produk.  
-- Tombol **Add to Cart** dan **Love/Favorite**.  
-- Menampilkan review dari pengguna.  
+- Memberikan review pada produk
+- mengedit review dan rating yang sudah diberikan
+- menghapus review dan rating yang sudah diberikan
+- admin dapat menghapus review dan rating yang dianggap menjatuhkan dan tidak sesuai realita 
 
 🧾 **CRUD:**
 | Operasi | Deskripsi | Akses |
 |----------|------------|--------|
 | **Read** | Menampilkan detail produk | Semua |
-| **Create** | — | — |
-| **Update** | — | — |
-| **Delete** | — | — |
+| **Create** | Membuat review dan menambahkan rating | User |
+| **Update** | Mengedit review dan rating yang sudah diberi pada produk | User |
+| **Delete** | Menghapus review dan rating yang sudah diberikan | Admin and User |
 
 ---
 
