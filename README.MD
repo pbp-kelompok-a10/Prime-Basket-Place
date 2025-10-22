@@ -154,6 +154,27 @@ pada produk, dan memberikan rating pada produk
 | **Update** | Mengedit review dan rating yang sudah diberi pada produk | User |
 | **Delete** | Menghapus review dan rating yang sudah diberikan | Admin and User |
 
+### ❤️ **Favourite**
+
+🧠 **Deskripsi:**  
+Modul Favourite memungkinkan pengguna untuk menandai produk basket yang mereka sukai agar mudah ditemukan dan diakses kembali di kemudian hari.
+Fitur ini membantu pengguna menyimpan daftar produk favorit. Seperti sepatu, bola, atau jersey,
+yang mungkin ingin mereka beli nanti tanpa perlu mencarinya ulang.
+
+⚙️ **Fitur Utama:**  
+- Menandai atau menghapus tanda favorit pada produk.
+- Melihat daftar produk yang telah ditandai sebagai favorit.
+- Mengakses langsung halaman detail produk dari daftar favorit.
+- Admin dapat menghapus favorit pengguna yang dianggap tidak relevan atau melanggar kebijakan platform.
+
+🧾 **CRUD:**
+| Operasi | Deskripsi | Akses |
+|----------|------------|--------|
+| **Read** | Melihat daftar produk favorit | User, Admin |
+| **Create** | Menandai produk sebagai favorit | User |
+| **Update** | — | — |
+| **Delete** | Menghapus produk dari daftar favorit | User, Admin |
+
 ---
 
 ## 👥 **Role Pengguna Aplikasi**
