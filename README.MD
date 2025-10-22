@@ -149,9 +149,9 @@ Selain itu, template dari **Review App** ditampilkan di bagian bawah halaman det
 | Operasi | Deskripsi | Akses |
 |----------|------------|--------|
 | **Read** | Menampilkan detail produk | Semua |
-| **Create** | — | — |
-| **Update** | — | — |
-| **Delete** | — | — |
+| **Create** | Membuat detail baru dari produk | User |
+| **Update** | Memperbarui detail produk | User |
+| **Delete** | Menghapus detail produk | User |
 
 ---
 
