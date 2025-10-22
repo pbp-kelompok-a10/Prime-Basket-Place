@@ -168,12 +168,17 @@ yang mungkin ingin mereka beli nanti tanpa perlu mencarinya ulang.
 - Mengakses langsung halaman detail produk dari daftar favorit.
 - Admin dapat menghapus favorit pengguna yang dianggap tidak relevan atau melanggar kebijakan platform.
 
+🔒 **Akses Pengguna:**  
+- **User:** CRUD penuh terhadap daftar favorit dan catatan pribadinya sendiri.  
+- **Admin:** Dapat melihat dan menghapus daftar favorit pengguna untuk keperluan moderasi.
+- **Guest:** Tidak dapat menandai produk, akan diarahkan ke halaman login.
+
 🧾 **CRUD:**
 | Operasi | Deskripsi | Akses |
 |----------|------------|--------|
 | **Read** | Melihat daftar produk favorit | User, Admin |
 | **Create** | Menandai produk sebagai favorit | User |
-| **Update** | — | — |
+| **Update** | Mengubah catatan pribadi (notes) pada produk favorit | User |
 | **Delete** | Menghapus produk dari daftar favorit | User, Admin |
 
 ---
