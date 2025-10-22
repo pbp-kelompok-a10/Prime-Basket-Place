@@ -153,6 +153,8 @@ Selain itu, template dari **Review App** ditampilkan di bagian bawah halaman det
 | **Update** | — | — |
 | **Delete** | — | — |
 
+---
+
 ### ❤️ **Favourite**
 
 🧠 **Deskripsi:**  
