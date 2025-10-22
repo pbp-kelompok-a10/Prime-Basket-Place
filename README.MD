@@ -72,9 +72,9 @@ Terdapat pula fitur *slider* untuk menampilkan produk-produk populer, direkomend
 | Operasi | Deskripsi | Akses |
 |----------|------------|--------|
 | **Read** | Menampilkan data produk di homepage | Guest, User, Admin |
-| **Create** | — | — |
-| **Update** | — | — |
-| **Delete** | — | — |
+| **Create** | Menambahkan slider promosi atau diskon produk | Admin |
+| **Update** | Mengubah produk di dalam slider | Admin |
+| **Delete** | Menghapus konten slider dan produk di homepage | Admin |
 
 ---
 
@@ -133,26 +133,25 @@ Hanya pengguna terdaftar yang bisa menulis review.
 
 ---
 
-### 🧾 **Product Catalog**
+### 🧾 **Detail Product**
 
 🧠 **Deskripsi:**  
-Modul ini memuat katalog produk basket yang memungkinkan pengguna melihat detail produk, memberikan review
-pada produk, dan memberikan rating pada produk
+Modul ini memuat informasi detail mengenai suatu produk basket.  
+Terdapat fitur **masukkan keranjang** dan **love button** untuk menandai produk favorit.  
+Selain itu, template dari **Review App** ditampilkan di bagian bawah halaman detail produk.  
 
 ⚙️ **Fitur Utama:**  
 - Menampilkan detail lengkap produk.  
-- Memberikan review pada produk
-- mengedit review dan rating yang sudah diberikan
-- menghapus review dan rating yang sudah diberikan
-- admin dapat menghapus review dan rating yang dianggap menjatuhkan dan tidak sesuai realita 
+- Tombol **Add to Cart** dan **Love/Favorite**.  
+- Menampilkan review dari pengguna.  
 
 🧾 **CRUD:**
 | Operasi | Deskripsi | Akses |
 |----------|------------|--------|
 | **Read** | Menampilkan detail produk | Semua |
-| **Create** | Membuat review dan menambahkan rating | User |
-| **Update** | Mengedit review dan rating yang sudah diberi pada produk | User |
-| **Delete** | Menghapus review dan rating yang sudah diberikan | Admin and User |
+| **Create** | — | — |
+| **Update** | — | — |
+| **Delete** | — | — |
 
 ---
 
