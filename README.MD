@@ -35,10 +35,11 @@ Modul Account berfungsi sebagai pusat identitas dan aktivitas pengguna di **Prim
 Di dalam modul ini, pengguna dapat melakukan berbagai hal seperti mengelola profil pribadi, melihat riwayat transaksi pembelian maupun penjualan alat basket, serta memantau produk yang pernah mereka ulas atau sukai.  
 
 ⚙️ **Fitur Utama:**  
-- Mengubah **password**.  
+- Mengubah **profil dan password**.  
 - Memperbarui **informasi profil**.  
 - Melihat **status transaksi dan pengiriman** secara *real-time*.  
 - Melihat **riwayat transaksi**, **produk yang diulas**, dan **produk yang disukai**.  
+- Menghapus **Akun dari sisi pengguna atau admin** 
 
 🔒 **Akses Pengguna:**  
 - **User:** Akses penuh terhadap fitur personal.  
@@ -50,8 +51,8 @@ Di dalam modul ini, pengguna dapat melakukan berbagai hal seperti mengelola prof
 |----------|------------|--------|
 | **Read** | Melihat data profil dan riwayat aktivitas | User, Admin |
 | **Update** | Mengubah profil dan password | User |
-| **Delete** | — | — |
-| **Create** | — | — |
+| **Delete** | Mengubah profil dan password | User |
+| **Create** | Menghapus akun pengguna dari sistem | User, Admin |
 
 ---
 
