@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="bg-[#F8F8F8] min-h-screen py-10">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8">
+
+    <!-- Sidebar -->
+    <div class="bg-white rounded-xl shadow p-4 w-full md:w-1/4">
+      <h2 class="text-xl font-semibold text-[#391C8C] mb-4">Account</h2>
+      <ul class="space-y-3">
+        <li>
+          <a href="{% url 'account:show_profile' %}" class="flex items-center gap-2 p-2 rounded-lg bg-[#B1AFCA] text-[#391C8C] font-medium">
+            <i class="fa-solid fa-user"></i> Profile Settings
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'account:password' %}" class="flex items-center gap-2 p-2 rounded-lg text-gray-700 hover:bg-[#B1AFCA] hover:text-[#391C8C]">
+            <i class="fa-solid fa-lock"></i> Password
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'account:favorites' %}" class="flex items-center gap-2 p-2 rounded-lg text-gray-700 hover:bg-[#B1AFCA] hover:text-[#391C8C]">
+            <i class="fa-solid fa-heart"></i> Favorite
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'account:logout' %}" class="flex items-center gap-2 p-2 rounded-lg text-gray-700 hover:bg-[#B1AFCA] hover:text-[#391C8C]">
+            <i class="fa-solid fa-power-off"></i> Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Profile Display -->
+    <div class="bg-white rounded-xl shadow p-8 flex-1">
+      
+      <div class="max-w-sm mx-auto">
+        
+        <div class="flex flex-col items-center mb-8">
+          {% if account.profile_picture %}
+            <img src="{{ account.profile_picture }}" alt="Profile Picture" class="w-28 h-28 rounded-full object-cover border-4 border-[#B1AFCA]">
+          {% else %}
+            <div class="w-28 h-28 bg-gray-200 rounded-full flex items-center justify-center">
+              <i class="fa-solid fa-user text-5xl text-gray-400"></i>
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="space-y-5">
+          
+          <div>
+            <label class="block text-sm font-medium text-[#391C8C] mb-1">
+              Nickname
+            </label>
+            <div class="w-full p-3 bg-gray-100 border border-gray-300 rounded-xl text-gray-700">
+              {{ account.nickname|default:"-" }}
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-[#391C8C] mb-1">
+              Umur
+            </label>
+            <div class="w-full p-3 bg-gray-100 border border-gray-300 rounded-xl text-gray-700">
+              {{ account.age|default:"-" }}
+            </div>
+          </div>
+
+          <div class="text-center pt-4">
+            <button id="editBtn"
+              class="border-2 border-[#391C8C] text-[#391C8C] px-10 py-2 rounded-xl font-semibold hover:bg-[#391C8C] hover:text-white transition-colors duration-200">
+              Edit
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<!-- Modal Edit -->
+<div id="editModal" class="hidden fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
+  <div class="bg-white rounded-xl p-6 w-full max-w-md relative shadow-lg">
+    <button id="closeModal" class="absolute top-3 right-4 text-gray-500 hover:text-gray-700">
+      <i class="fa-solid fa-xmark text-xl"></i>
+    </button>
+    <h3 class="text-xl font-semibold text-[#391C8C] mb-4 text-center">Edit Profile</h3>
+
+    <form method="POST" id="editForm" class="space-y-5">
+      {% csrf_token %}
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">Nickname</label>
+        <input type="text" name="nickname" value="{{ account.nickname }}"
+          class="w-full rounded-md border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-[#391C8C]" />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">Umur</label>
+        <input type="number" name="age" value="{{ account.age }}"
+          class="w-full rounded-md border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-[#391C8C]" />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">Profile Picture URL</label>
+        <input type="url" name="profile_picture" value="{{ account.profile_picture }}"
+          class="w-full rounded-md border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-[#391C8C]" />
+      </div>
+
+      <div class="flex justify-end gap-3 pt-4">
+        <button type="button" id="cancelBtn" class="border px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Cancel</button>
+        <button type="submit" class="bg-[#391C8C] text-white px-6 py-2 rounded-lg hover:bg-[#2c1570]">Save Changes</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  const editBtn = document.getElementById('editBtn');
+  const modal = document.getElementById('editModal');
+  const closeModal = document.getElementById('closeModal');
+  const cancelBtn = document.getElementById('cancelBtn');
+
+  editBtn.addEventListener('click', () => modal.classList.remove('hidden'));
+  closeModal.addEventListener('click', () => modal.classList.add('hidden'));
+  cancelBtn.addEventListener('click', () => modal.classList.add('hidden'));
+</script>
+{% endblock %}
