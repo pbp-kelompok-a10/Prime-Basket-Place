@@ -1,2102 +1,1202 @@
 [
   {
-    "model": "apparel.product",
-    "pk": 1,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Essential Icon Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 1470000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-jersey-0001",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-jersey-0001.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 2,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Elite City Edition Jersey (Unisex)",
-      "category_guess": "Jersey",
-      "price_idr": 1029000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-jersey-0002",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-jersey-0002.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 3,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Team Association Jersey (Unisex)",
-      "category_guess": "Jersey",
-      "price_idr": 1007000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-jersey-0003",
-      "image_url": "https://www.nike.com/id/images/nike-jersey-0003.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 4,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak DNA AEROREADY Shorts (Men's)",
-      "category_guess": "Shorts",
-      "price_idr": 1002000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0004",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0004.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 5,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS DNA Association Jersey (Women's)",
-      "category_guess": "Jersey",
-      "price_idr": 1535000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-jersey-0005",
-      "image_url": "https://www.adidas.co.id/images/adidas-jersey-0005.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 6,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Elite Fleece Hoodie/Sweatshirt (Women's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1434000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-hoodie-sweatshirt-0006",
-      "image_url": "https://www.nike.com/id/images/nike-hoodie-sweatshirt-0006.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 7,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Pro Tapered Pants Pants/Tracksuit (Unisex)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1697000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0007",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0007.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 8,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Prime Dri-FIT Tee Top/T-Shirt (Women's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 619000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-top-t-shirt-0008",
-      "image_url": "https://www.nike.com/id/images/nike-top-t-shirt-0008.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 9,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Pro Elite Shorts (Unisex)",
-      "category_guess": "Shorts",
-      "price_idr": 1190000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0009",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0009.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 10,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Elite Association Jersey (Women's)",
-      "category_guess": "Jersey",
-      "price_idr": 2756000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-jersey-0010",
-      "image_url": "https://www.adidas.co.id/images/adidas-jersey-0010.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 11,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Icon Therma Hoodie/Sweatshirt (Women's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1245000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-hoodie-sweatshirt-0011",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-hoodie-sweatshirt-0011.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 12,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Club Compression Shirt Apparel (Other) (Unisex)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 366000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-apparel-(other)-0012",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-apparel-(other)-0012.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 13,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Prime Logo Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 581000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-top-t-shirt-0013",
-      "image_url": "https://www.adidas.co.id/images/adidas-top-t-shirt-0013.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 14,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike Icon Elite Shorts (Women's)",
-      "category_guess": "Shorts",
-      "price_idr": 466000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-shorts-0014",
-      "image_url": "https://www.nike.com/id/images/nike-shorts-0014.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 15,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike Team Tapered Pants Pants/Tracksuit (Unisex)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1409000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-pants-tracksuit-0015",
-      "image_url": "https://www.nike.com/id/images/nike-pants-tracksuit-0015.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 16,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Essential Graphic Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 518000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0016",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0016.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 17,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak DNA Essentials Pants Pants/Tracksuit (Women's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 882000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-pants-tracksuit-0017",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-pants-tracksuit-0017.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 18,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Pro Dri-FIT Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 412000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0018",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0018.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 19,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak DNA Dri-FIT Tee Top/T-Shirt (Women's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 790000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0019",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0019.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 20,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Elite Track Pants Pants/Tracksuit (Unisex)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1145000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0020",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0020.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 21,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Essential Fleece Hoodie/Sweatshirt (Women's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1628000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-hoodie-sweatshirt-0021",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-hoodie-sweatshirt-0021.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 22,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Prime Warm-up Jacket Apparel (Other) (Men's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 307000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-apparel-(other)-0022",
-      "image_url": "https://www.nike.com/id/images/nike-apparel-(other)-0022.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 23,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Club Therma Hoodie/Sweatshirt (Women's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1803000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-hoodie-sweatshirt-0023",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-hoodie-sweatshirt-0023.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 24,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Icon City Edition Jersey (Women's)",
-      "category_guess": "Jersey",
-      "price_idr": 1357000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-jersey-0024",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-jersey-0024.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 25,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Pro Therma Hoodie/Sweatshirt (Men's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 860000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-hoodie-sweatshirt-0025",
-      "image_url": "https://www.adidas.co.id/images/adidas-hoodie-sweatshirt-0025.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 26,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Elite Long-Sleeve Tee Apparel (Other) (Unisex)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 330000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-apparel-(other)-0026",
-      "image_url": "https://www.nike.com/id/images/nike-apparel-(other)-0026.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 27,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Essential Graphic Tee Top/T-Shirt (Unisex)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 465000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0027",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0027.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 28,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Essential Sleeveless Top Apparel (Other) (Women's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 647000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-apparel-(other)-0028",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-apparel-(other)-0028.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 29,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Team Dri-FIT Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 595000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0029",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0029.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 30,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Team Joggers Pants/Tracksuit (Men's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 719000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-pants-tracksuit-0030",
-      "image_url": "https://www.nike.com/id/images/nike-pants-tracksuit-0030.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 31,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Icon Icon Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 1873000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-jersey-0031",
-      "image_url": "https://www.nike.com/id/images/nike-jersey-0031.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 32,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Team Long-Sleeve Tee Apparel (Other) (Unisex)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 939000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-apparel-(other)-0032",
-      "image_url": "https://www.adidas.co.id/images/adidas-apparel-(other)-0032.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 33,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Team Essentials Pants Pants/Tracksuit (Women's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 988000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-pants-tracksuit-0033",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-pants-tracksuit-0033.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 34,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike Icon Swingman Jersey (Women's)",
-      "category_guess": "Jersey",
-      "price_idr": 2811000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-jersey-0034",
-      "image_url": "https://www.nike.com/id/images/nike-jersey-0034.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 35,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Pro Icon Jersey (Women's)",
-      "category_guess": "Jersey",
-      "price_idr": 1346000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-jersey-0035",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-jersey-0035.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 36,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Prime Dri-FIT Shorts (Women's)",
-      "category_guess": "Shorts",
-      "price_idr": 831000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-shorts-0036",
-      "image_url": "https://www.nike.com/id/images/nike-shorts-0036.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 37,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike Team Essentials Hoodie Hoodie/Sweatshirt (Men's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1826000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-hoodie-sweatshirt-0037",
-      "image_url": "https://www.nike.com/id/images/nike-hoodie-sweatshirt-0037.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 38,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Pro City Edition Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 1580000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-jersey-0038",
-      "image_url": "https://www.nike.com/id/images/nike-jersey-0038.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 39,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Team Badge of Sport Tee Top/T-Shirt (Women's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 417000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-top-t-shirt-0039",
-      "image_url": "https://www.adidas.co.id/images/adidas-top-t-shirt-0039.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 40,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Essential Swingman Jersey (Women's)",
-      "category_guess": "Jersey",
-      "price_idr": 2631000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-jersey-0040",
-      "image_url": "https://www.adidas.co.id/images/adidas-jersey-0040.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 41,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Club Long-Sleeve Tee Apparel (Other) (Men's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 421000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-apparel-(other)-0041",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-apparel-(other)-0041.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 42,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Icon Track Pants Pants/Tracksuit (Men's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1575000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-pants-tracksuit-0042",
-      "image_url": "https://www.nike.com/id/images/nike-pants-tracksuit-0042.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 43,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Pro Joggers Pants/Tracksuit (Unisex)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 979000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-pants-tracksuit-0043",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-pants-tracksuit-0043.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 44,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Team Track Pants Pants/Tracksuit (Women's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1103000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-pants-tracksuit-0044",
-      "image_url": "https://www.nike.com/id/images/nike-pants-tracksuit-0044.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 45,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Elite Track Pants Pants/Tracksuit (Women's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1133000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-pants-tracksuit-0045",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-pants-tracksuit-0045.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 46,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike Team Warm-up Jacket Apparel (Other) (Women's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 333000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-apparel-(other)-0046",
-      "image_url": "https://www.nike.com/id/images/nike-apparel-(other)-0046.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 47,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Flight Warm-up Jacket Apparel (Other) (Women's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 208000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-apparel-(other)-0047",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-apparel-(other)-0047.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 48,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Elite Track Pants Pants/Tracksuit (Unisex)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1635000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0048",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0048.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 49,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Elite Performance Shorts (Men's)",
-      "category_guess": "Shorts",
-      "price_idr": 690000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-shorts-0049",
-      "image_url": "https://www.adidas.co.id/images/adidas-shorts-0049.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 50,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Prime Logo Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 555000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-top-t-shirt-0050",
-      "image_url": "https://www.nike.com/id/images/nike-top-t-shirt-0050.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 51,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Essential Association Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 1535000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-jersey-0051",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-jersey-0051.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 52,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Icon Therma Hoodie/Sweatshirt (Men's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1997000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-hoodie-sweatshirt-0052",
-      "image_url": "https://www.adidas.co.id/images/adidas-hoodie-sweatshirt-0052.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 53,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Essential Essentials Pants Pants/Tracksuit (Men's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1466000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0053",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0053.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 54,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Icon Icon Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 1971000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-jersey-0054",
-      "image_url": "https://www.adidas.co.id/images/adidas-jersey-0054.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 55,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike Prime Long-Sleeve Tee Apparel (Other) (Unisex)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 773000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-apparel-(other)-0055",
-      "image_url": "https://www.nike.com/id/images/nike-apparel-(other)-0055.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 56,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Club Icon Jersey (Unisex)",
-      "category_guess": "Jersey",
-      "price_idr": 2411000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-jersey-0056",
-      "image_url": "https://www.nike.com/id/images/nike-jersey-0056.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 57,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak DNA Joggers Pants/Tracksuit (Men's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1230000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-pants-tracksuit-0057",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-pants-tracksuit-0057.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 58,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Team Statement Jersey (Unisex)",
-      "category_guess": "Jersey",
-      "price_idr": 1320000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-jersey-0058",
-      "image_url": "https://www.adidas.co.id/images/adidas-jersey-0058.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 59,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Club Essentials Pants Pants/Tracksuit (Men's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 961000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0059",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0059.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 60,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Icon Association Jersey (Women's)",
-      "category_guess": "Jersey",
-      "price_idr": 1915000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-jersey-0060",
-      "image_url": "https://www.adidas.co.id/images/adidas-jersey-0060.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 61,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS DNA Elite Shorts (Men's)",
-      "category_guess": "Shorts",
-      "price_idr": 626000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-shorts-0061",
-      "image_url": "https://www.adidas.co.id/images/adidas-shorts-0061.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 62,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Essential Logo Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 273000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-top-t-shirt-0062",
-      "image_url": "https://www.nike.com/id/images/nike-top-t-shirt-0062.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 63,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Icon Primeblue Shorts (Women's)",
-      "category_guess": "Shorts",
-      "price_idr": 1190000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0063",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0063.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 64,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Prime Essentials Hoodie Hoodie/Sweatshirt (Women's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 935000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-hoodie-sweatshirt-0064",
-      "image_url": "https://www.adidas.co.id/images/adidas-hoodie-sweatshirt-0064.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 65,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Essential AEROREADY Shorts (Men's)",
-      "category_guess": "Shorts",
-      "price_idr": 1009000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-shorts-0065",
-      "image_url": "https://www.adidas.co.id/images/adidas-shorts-0065.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 66,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes DNA Club Hoodie Hoodie/Sweatshirt (Unisex)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 935000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-hoodie-sweatshirt-0066",
-      "image_url": "https://www.adidas.co.id/images/adidas-hoodie-sweatshirt-0066.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 67,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Essential Joggers Pants/Tracksuit (Men's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1492000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0067",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0067.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 68,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Icon Joggers Pants/Tracksuit (Women's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1275000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-pants-tracksuit-0068",
-      "image_url": "https://www.nike.com/id/images/nike-pants-tracksuit-0068.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 69,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Essential Fleece Hoodie/Sweatshirt (Unisex)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1535000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-hoodie-sweatshirt-0069",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-hoodie-sweatshirt-0069.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 70,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Prime Logo Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 679000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-top-t-shirt-0070",
-      "image_url": "https://www.adidas.co.id/images/adidas-top-t-shirt-0070.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 71,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Essential Graphic Tee Top/T-Shirt (Women's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 560000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0071",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0071.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 72,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Icon Primeblue Shorts (Women's)",
-      "category_guess": "Shorts",
-      "price_idr": 851000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-shorts-0072",
-      "image_url": "https://www.adidas.co.id/images/adidas-shorts-0072.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 73,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Flight AEROREADY Shorts (Unisex)",
-      "category_guess": "Shorts",
-      "price_idr": 1073000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0073",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0073.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 74,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Elite Club Hoodie Hoodie/Sweatshirt (Men's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1334000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-hoodie-sweatshirt-0074",
-      "image_url": "https://www.nike.com/id/images/nike-hoodie-sweatshirt-0074.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 75,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Pro Dri-FIT Shorts (Men's)",
-      "category_guess": "Shorts",
-      "price_idr": 885000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-shorts-0075",
-      "image_url": "https://www.nike.com/id/images/nike-shorts-0075.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 76,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak DNA Swingman Jersey (Unisex)",
-      "category_guess": "Jersey",
-      "price_idr": 2471000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-jersey-0076",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-jersey-0076.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 77,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Club Graphic Tee Top/T-Shirt (Unisex)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 254000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-top-t-shirt-0077",
-      "image_url": "https://www.adidas.co.id/images/adidas-top-t-shirt-0077.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 78,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Club Graphic Tee Top/T-Shirt (Unisex)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 724000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-top-t-shirt-0078",
-      "image_url": "https://www.nike.com/id/images/nike-top-t-shirt-0078.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 79,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Elite Joggers Pants/Tracksuit (Women's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1550000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-pants-tracksuit-0079",
-      "image_url": "https://www.nike.com/id/images/nike-pants-tracksuit-0079.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 80,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Flight Tapered Pants Pants/Tracksuit (Unisex)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1512000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-pants-tracksuit-0080",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-pants-tracksuit-0080.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 81,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Flight Long-Sleeve Tee Apparel (Other) (Women's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 851000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-apparel-(other)-0081",
-      "image_url": "https://www.nike.com/id/images/nike-apparel-(other)-0081.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 82,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Team Essentials Pants Pants/Tracksuit (Women's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 757000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0082",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0082.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 83,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Essential Therma Hoodie/Sweatshirt (Women's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1805000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-hoodie-sweatshirt-0083",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-hoodie-sweatshirt-0083.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 84,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Team Dri-FIT Shorts (Women's)",
-      "category_guess": "Shorts",
-      "price_idr": 555000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-shorts-0084",
-      "image_url": "https://www.nike.com/id/images/nike-shorts-0084.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 85,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak DNA Elite Shorts (Women's)",
-      "category_guess": "Shorts",
-      "price_idr": 954000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0085",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0085.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 86,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Team Dri-FIT Tee Top/T-Shirt (Women's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 269000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-top-t-shirt-0086",
-      "image_url": "https://www.adidas.co.id/images/adidas-top-t-shirt-0086.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 87,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Pro Badge of Sport Tee Top/T-Shirt (Women's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 648000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0087",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0087.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 88,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Flight Joggers Pants/Tracksuit (Men's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1491000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0088",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0088.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 89,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Icon Swingman Jersey (Unisex)",
-      "category_guess": "Jersey",
-      "price_idr": 2555000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-jersey-0089",
-      "image_url": "https://www.adidas.co.id/images/adidas-jersey-0089.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 90,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Club Primeblue Shorts (Unisex)",
-      "category_guess": "Shorts",
-      "price_idr": 802000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0090",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0090.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 91,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Elite Track Pants Pants/Tracksuit (Unisex)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 876000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-pants-tracksuit-0091",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-pants-tracksuit-0091.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 92,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Essential Elite Shorts (Women's)",
-      "category_guess": "Shorts",
-      "price_idr": 615000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-shorts-0092",
-      "image_url": "https://www.adidas.co.id/images/adidas-shorts-0092.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 93,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS DNA Club Hoodie Hoodie/Sweatshirt (Women's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1215000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-hoodie-sweatshirt-0093",
-      "image_url": "https://www.adidas.co.id/images/adidas-hoodie-sweatshirt-0093.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 94,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike Prime Dri-FIT Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 478000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-top-t-shirt-0094",
-      "image_url": "https://www.nike.com/id/images/nike-top-t-shirt-0094.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 95,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Pro Icon Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 982000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-jersey-0095",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-jersey-0095.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 96,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Club Dri-FIT Shorts (Women's)",
-      "category_guess": "Shorts",
-      "price_idr": 976000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0096",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0096.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 97,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Icon Logo Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 366000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-top-t-shirt-0097",
-      "image_url": "https://www.nike.com/id/images/nike-top-t-shirt-0097.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 98,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Pro Fleece Hoodie/Sweatshirt (Women's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1467000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-hoodie-sweatshirt-0098",
-      "image_url": "https://www.nike.com/id/images/nike-hoodie-sweatshirt-0098.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 99,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Elite Sleeveless Top Apparel (Other) (Unisex)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 841000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-apparel-(other)-0099",
-      "image_url": "https://www.adidas.co.id/images/adidas-apparel-(other)-0099.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 100,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Elite Statement Jersey (Unisex)",
-      "category_guess": "Jersey",
-      "price_idr": 2321000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-jersey-0100",
-      "image_url": "https://www.nike.com/id/images/nike-jersey-0100.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 101,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Elite Logo Tee Top/T-Shirt (Unisex)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 261000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0101",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0101.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 102,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes DNA Dri-FIT Tee Top/T-Shirt (Women's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 719000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-top-t-shirt-0102",
-      "image_url": "https://www.adidas.co.id/images/adidas-top-t-shirt-0102.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 103,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Club Primeblue Shorts (Unisex)",
-      "category_guess": "Shorts",
-      "price_idr": 1029000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0103",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0103.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 104,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak DNA Badge of Sport Tee Top/T-Shirt (Unisex)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 579000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0104",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0104.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 105,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike Flight Statement Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 2451000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-jersey-0105",
-      "image_url": "https://www.nike.com/id/images/nike-jersey-0105.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 106,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Icon Swingman Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 1767000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-jersey-0106",
-      "image_url": "https://www.adidas.co.id/images/adidas-jersey-0106.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 107,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Essential Club Hoodie Hoodie/Sweatshirt (Unisex)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1264000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-hoodie-sweatshirt-0107",
-      "image_url": "https://www.adidas.co.id/images/adidas-hoodie-sweatshirt-0107.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 108,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Team City Edition Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 2563000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-jersey-0108",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-jersey-0108.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 109,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Flight Joggers Pants/Tracksuit (Unisex)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1604000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0109",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0109.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 110,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Essential Icon Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 1895000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-jersey-0110",
-      "image_url": "https://www.adidas.co.id/images/adidas-jersey-0110.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 111,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Flight Warm-up Jacket Apparel (Other) (Unisex)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 551000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-apparel-(other)-0111",
-      "image_url": "https://www.adidas.co.id/images/adidas-apparel-(other)-0111.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 112,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Icon Warm-up Jacket Apparel (Other) (Unisex)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 476000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-apparel-(other)-0112",
-      "image_url": "https://www.adidas.co.id/images/adidas-apparel-(other)-0112.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 113,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Elite Therma Hoodie/Sweatshirt (Unisex)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1345000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-hoodie-sweatshirt-0113",
-      "image_url": "https://www.adidas.co.id/images/adidas-hoodie-sweatshirt-0113.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 114,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Team Sleeveless Top Apparel (Other) (Men's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 694000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-apparel-(other)-0114",
-      "image_url": "https://www.nike.com/id/images/nike-apparel-(other)-0114.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 115,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Elite Warm-up Jacket Apparel (Other) (Men's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 431000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-apparel-(other)-0115",
-      "image_url": "https://www.adidas.co.id/images/adidas-apparel-(other)-0115.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 116,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Pro Performance Shorts (Unisex)",
-      "category_guess": "Shorts",
-      "price_idr": 528000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-shorts-0116",
-      "image_url": "https://www.adidas.co.id/images/adidas-shorts-0116.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 117,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Prime Icon Jersey (Women's)",
-      "category_guess": "Jersey",
-      "price_idr": 1416000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-jersey-0117",
-      "image_url": "https://www.adidas.co.id/images/adidas-jersey-0117.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 118,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Pro Dri-FIT Tee Top/T-Shirt (Unisex)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 729000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0118",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0118.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 119,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Club Logo Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 738000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-top-t-shirt-0119",
-      "image_url": "https://www.adidas.co.id/images/adidas-top-t-shirt-0119.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 120,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Flight Swingman Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 1118000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-jersey-0120",
-      "image_url": "https://www.nike.com/id/images/nike-jersey-0120.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 121,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Essential AEROREADY Shorts (Men's)",
-      "category_guess": "Shorts",
-      "price_idr": 520000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-shorts-0121",
-      "image_url": "https://www.nike.com/id/images/nike-shorts-0121.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 122,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Prime Graphic Tee Top/T-Shirt (Women's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 702000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0122",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0122.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 123,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Essential Essentials Pants Pants/Tracksuit (Unisex)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 722000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0123",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0123.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 124,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Team Compression Shirt Apparel (Other) (Unisex)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 469000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-apparel-(other)-0124",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-apparel-(other)-0124.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 125,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Team Association Jersey (Men's)",
-      "category_guess": "Jersey",
-      "price_idr": 1540000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-jersey-0125",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-jersey-0125.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 126,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jordan Flight Badge of Sport Tee Top/T-Shirt (Women's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 486000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-top-t-shirt-0126",
-      "image_url": "https://www.nike.com/id/images/nike-top-t-shirt-0126.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 127,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Flight Warm-up Jacket Apparel (Other) (Men's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 438000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-apparel-(other)-0127",
-      "image_url": "https://www.adidas.co.id/images/adidas-apparel-(other)-0127.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 128,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes DNA Sleeveless Top Apparel (Other) (Men's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 429000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-apparel-(other)-0128",
-      "image_url": "https://www.adidas.co.id/images/adidas-apparel-(other)-0128.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 129,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak Club Performance Shorts (Men's)",
-      "category_guess": "Shorts",
-      "price_idr": 568000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0129",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0129.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 130,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Flight Tapered Pants Pants/Tracksuit (Men's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1221000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0130",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0130.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 131,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Prime Logo Tee Top/T-Shirt (Unisex)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 697000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0131",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0131.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 132,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike DNA Track Pants Pants/Tracksuit (Unisex)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1111000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-pants-tracksuit-0132",
-      "image_url": "https://www.nike.com/id/images/nike-pants-tracksuit-0132.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 133,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike Pro Association Jersey (Unisex)",
-      "category_guess": "Jersey",
-      "price_idr": 1063000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-jersey-0133",
-      "image_url": "https://www.nike.com/id/images/nike-jersey-0133.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 134,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Essential Badge of Sport Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 695000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-top-t-shirt-0134",
-      "image_url": "https://www.nike.com/id/images/nike-top-t-shirt-0134.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 135,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Flight Dri-FIT Tee Top/T-Shirt (Women's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 590000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0135",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0135.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 136,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Club Compression Shirt Apparel (Other) (Women's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 909000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-apparel-(other)-0136",
-      "image_url": "https://www.adidas.co.id/images/adidas-apparel-(other)-0136.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 137,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "ADIDAS Prime Essentials Hoodie Hoodie/Sweatshirt (Men's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 879000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-hoodie-sweatshirt-0137",
-      "image_url": "https://www.adidas.co.id/images/adidas-hoodie-sweatshirt-0137.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 138,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "3-Stripes Elite Club Hoodie Hoodie/Sweatshirt (Women's)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 701000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-hoodie-sweatshirt-0138",
-      "image_url": "https://www.adidas.co.id/images/adidas-hoodie-sweatshirt-0138.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 139,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Tarmak DNA Essentials Pants Pants/Tracksuit (Men's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1660000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-pants-tracksuit-0139",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-pants-tracksuit-0139.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 140,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Flight Essentials Pants Pants/Tracksuit (Men's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1145000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0140",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0140.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 141,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Flight Performance Shorts (Unisex)",
-      "category_guess": "Shorts",
-      "price_idr": 523000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0141",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0141.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 142,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Jumpman Club Sleeveless Top Apparel (Other) (Women's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 213000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-apparel-(other)-0142",
-      "image_url": "https://www.nike.com/id/images/nike-apparel-(other)-0142.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 143,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Team Dri-FIT Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 369000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0143",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0143.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 144,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Essential Primeblue Shorts (Unisex)",
-      "category_guess": "Shorts",
-      "price_idr": 824000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-shorts-0144",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-shorts-0144.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 145,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Flight Graphic Tee Top/T-Shirt (Unisex)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 641000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-top-t-shirt-0145",
-      "image_url": "https://www.adidas.co.id/images/adidas-top-t-shirt-0145.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 146,
-    "fields": {
-      "source": "Nike Indonesia",
-      "brand": "Nike/Jordan",
-      "product_name": "Nike Elite Joggers Pants/Tracksuit (Women's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1295000,
-      "currency": "IDR",
-      "product_url": "https://www.nike.com/id/p/nike-pants-tracksuit-0146",
-      "image_url": "https://www.nike.com/id/images/nike-pants-tracksuit-0146.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 147,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Essential Fleece Hoodie/Sweatshirt (Unisex)",
-      "category_guess": "Hoodie/Sweatshirt",
-      "price_idr": 1901000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-hoodie-sweatshirt-0147",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-hoodie-sweatshirt-0147.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 148,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak Club Long-Sleeve Tee Apparel (Other) (Women's)",
-      "category_guess": "Apparel (Other)",
-      "price_idr": 552000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-apparel-(other)-0148",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-apparel-(other)-0148.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 149,
-    "fields": {
-      "source": "adidas Indonesia",
-      "brand": "adidas",
-      "product_name": "adidas Flight Essentials Pants Pants/Tracksuit (Women's)",
-      "category_guess": "Pants/Tracksuit",
-      "price_idr": 1088000,
-      "currency": "IDR",
-      "product_url": "https://www.adidas.co.id/p/adidas-pants-tracksuit-0149",
-      "image_url": "https://www.adidas.co.id/images/adidas-pants-tracksuit-0149.jpg"
-    }
-  },
-  {
-    "model": "apparel.product",
-    "pk": 150,
-    "fields": {
-      "source": "Decathlon Indonesia",
-      "brand": "Tarmak/Decathlon",
-      "product_name": "Decathlon Tarmak DNA Graphic Tee Top/T-Shirt (Men's)",
-      "category_guess": "Top/T-Shirt",
-      "price_idr": 733000,
-      "currency": "IDR",
-      "product_url": "https://www.decathlon.co.id/p/tarmak-top-t-shirt-0150",
-      "image_url": "https://www.decathlon.co.id/images/tarmak-top-t-shirt-0150.jpg"
-    }
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Essential Icon Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 1470000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Elite City Edition Jersey (Unisex)",
+    "category": "Jersey",
+    "price_idr": 1029000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Team Association Jersey (Unisex)",
+    "category": "Jersey",
+    "price_idr": 1007000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak DNA AEROREADY Shorts (Men's)",
+    "category": "Shorts",
+    "price_idr": 1002000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS DNA Association Jersey (Women's)",
+    "category": "Jersey",
+    "price_idr": 1535000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Elite Fleece Hoodie/Sweatshirt (Women's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1434000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Pro Tapered Pants Pants/Tracksuit (Unisex)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1697000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Prime Dri-FIT Tee Top/T-Shirt (Women's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 619000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Pro Elite Shorts (Unisex)",
+    "category": "Shorts",
+    "price_idr": 1190000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Elite Association Jersey (Women's)",
+    "category": "Jersey",
+    "price_idr": 2756000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Icon Therma Hoodie/Sweatshirt (Women's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1245000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Club Compression Shirt Apparel (Other) (Unisex)",
+    "category": "Apparel (Other)",
+    "price_idr": 366000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Prime Logo Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 581000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike Icon Elite Shorts (Women's)",
+    "category": "Shorts",
+    "price_idr": 466000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike Team Tapered Pants Pants/Tracksuit (Unisex)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1409000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Essential Graphic Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 518000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak DNA Essentials Pants Pants/Tracksuit (Women's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 882000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Pro Dri-FIT Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 412000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak DNA Dri-FIT Tee Top/T-Shirt (Women's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 790000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Elite Track Pants Pants/Tracksuit (Unisex)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1145000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Essential Fleece Hoodie/Sweatshirt (Women's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1628000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Prime Warm-up Jacket Apparel (Other) (Men's)",
+    "category": "Apparel (Other)",
+    "price_idr": 307000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Club Therma Hoodie/Sweatshirt (Women's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1803000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Icon City Edition Jersey (Women's)",
+    "category": "Jersey",
+    "price_idr": 1357000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Pro Therma Hoodie/Sweatshirt (Men's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 860000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Elite Long-Sleeve Tee Apparel (Other) (Unisex)",
+    "category": "Apparel (Other)",
+    "price_idr": 330000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Essential Graphic Tee Top/T-Shirt (Unisex)",
+    "category": "Top/T-Shirt",
+    "price_idr": 465000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Essential Sleeveless Top Apparel (Other) (Women's)",
+    "category": "Apparel (Other)",
+    "price_idr": 647000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Team Dri-FIT Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 595000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Team Joggers Pants/Tracksuit (Men's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 719000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Icon Icon Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 1873000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Team Long-Sleeve Tee Apparel (Other) (Unisex)",
+    "category": "Apparel (Other)",
+    "price_idr": 939000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Team Essentials Pants Pants/Tracksuit (Women's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 988000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike Icon Swingman Jersey (Women's)",
+    "category": "Jersey",
+    "price_idr": 2811000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Pro Icon Jersey (Women's)",
+    "category": "Jersey",
+    "price_idr": 1346000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Prime Dri-FIT Shorts (Women's)",
+    "category": "Shorts",
+    "price_idr": 831000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike Team Essentials Hoodie Hoodie/Sweatshirt (Men's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1826000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Pro City Edition Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 1580000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Team Badge of Sport Tee Top/T-Shirt (Women's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 417000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Essential Swingman Jersey (Women's)",
+    "category": "Jersey",
+    "price_idr": 2631000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Club Long-Sleeve Tee Apparel (Other) (Men's)",
+    "category": "Apparel (Other)",
+    "price_idr": 421000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Icon Track Pants Pants/Tracksuit (Men's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1575000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Pro Joggers Pants/Tracksuit (Unisex)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 979000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Team Track Pants Pants/Tracksuit (Women's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1103000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Elite Track Pants Pants/Tracksuit (Women's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1133000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike Team Warm-up Jacket Apparel (Other) (Women's)",
+    "category": "Apparel (Other)",
+    "price_idr": 333000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Flight Warm-up Jacket Apparel (Other) (Women's)",
+    "category": "Apparel (Other)",
+    "price_idr": 208000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Elite Track Pants Pants/Tracksuit (Unisex)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1635000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Elite Performance Shorts (Men's)",
+    "category": "Shorts",
+    "price_idr": 690000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Prime Logo Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 555000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Essential Association Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 1535000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Icon Therma Hoodie/Sweatshirt (Men's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1997000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Essential Essentials Pants Pants/Tracksuit (Men's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1466000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Icon Icon Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 1971000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike Prime Long-Sleeve Tee Apparel (Other) (Unisex)",
+    "category": "Apparel (Other)",
+    "price_idr": 773000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Club Icon Jersey (Unisex)",
+    "category": "Jersey",
+    "price_idr": 2411000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak DNA Joggers Pants/Tracksuit (Men's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1230000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Team Statement Jersey (Unisex)",
+    "category": "Jersey",
+    "price_idr": 1320000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Club Essentials Pants Pants/Tracksuit (Men's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 961000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Icon Association Jersey (Women's)",
+    "category": "Jersey",
+    "price_idr": 1915000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS DNA Elite Shorts (Men's)",
+    "category": "Shorts",
+    "price_idr": 626000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Essential Logo Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 273000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Icon Primeblue Shorts (Women's)",
+    "category": "Shorts",
+    "price_idr": 1190000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Prime Essentials Hoodie Hoodie/Sweatshirt (Women's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 935000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Essential AEROREADY Shorts (Men's)",
+    "category": "Shorts",
+    "price_idr": 1009000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes DNA Club Hoodie Hoodie/Sweatshirt (Unisex)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 935000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Essential Joggers Pants/Tracksuit (Men's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1492000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Icon Joggers Pants/Tracksuit (Women's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1275000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Essential Fleece Hoodie/Sweatshirt (Unisex)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1535000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Prime Logo Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 679000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Essential Graphic Tee Top/T-Shirt (Women's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 560000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Icon Primeblue Shorts (Women's)",
+    "category": "Shorts",
+    "price_idr": 851000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Flight AEROREADY Shorts (Unisex)",
+    "category": "Shorts",
+    "price_idr": 1073000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Elite Club Hoodie Hoodie/Sweatshirt (Men's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1334000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Pro Dri-FIT Shorts (Men's)",
+    "category": "Shorts",
+    "price_idr": 885000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak DNA Swingman Jersey (Unisex)",
+    "category": "Jersey",
+    "price_idr": 2471000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Club Graphic Tee Top/T-Shirt (Unisex)",
+    "category": "Top/T-Shirt",
+    "price_idr": 254000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Club Graphic Tee Top/T-Shirt (Unisex)",
+    "category": "Top/T-Shirt",
+    "price_idr": 724000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Elite Joggers Pants/Tracksuit (Women's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1550000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Flight Tapered Pants Pants/Tracksuit (Unisex)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1512000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Flight Long-Sleeve Tee Apparel (Other) (Women's)",
+    "category": "Apparel (Other)",
+    "price_idr": 851000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Team Essentials Pants Pants/Tracksuit (Women's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 757000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Essential Therma Hoodie/Sweatshirt (Women's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1805000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Team Dri-FIT Shorts (Women's)",
+    "category": "Shorts",
+    "price_idr": 555000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak DNA Elite Shorts (Women's)",
+    "category": "Shorts",
+    "price_idr": 954000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Team Dri-FIT Tee Top/T-Shirt (Women's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 269000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Pro Badge of Sport Tee Top/T-Shirt (Women's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 648000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Flight Joggers Pants/Tracksuit (Men's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1491000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Icon Swingman Jersey (Unisex)",
+    "category": "Jersey",
+    "price_idr": 2555000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Club Primeblue Shorts (Unisex)",
+    "category": "Shorts",
+    "price_idr": 802000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Elite Track Pants Pants/Tracksuit (Unisex)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 876000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Essential Elite Shorts (Women's)",
+    "category": "Shorts",
+    "price_idr": 615000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS DNA Club Hoodie Hoodie/Sweatshirt (Women's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1215000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike Prime Dri-FIT Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 478000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Pro Icon Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 982000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Club Dri-FIT Shorts (Women's)",
+    "category": "Shorts",
+    "price_idr": 976000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Icon Logo Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 366000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Pro Fleece Hoodie/Sweatshirt (Women's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1467000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Elite Sleeveless Top Apparel (Other) (Unisex)",
+    "category": "Apparel (Other)",
+    "price_idr": 841000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Elite Statement Jersey (Unisex)",
+    "category": "Jersey",
+    "price_idr": 2321000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Elite Logo Tee Top/T-Shirt (Unisex)",
+    "category": "Top/T-Shirt",
+    "price_idr": 261000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes DNA Dri-FIT Tee Top/T-Shirt (Women's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 719000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Club Primeblue Shorts (Unisex)",
+    "category": "Shorts",
+    "price_idr": 1029000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak DNA Badge of Sport Tee Top/T-Shirt (Unisex)",
+    "category": "Top/T-Shirt",
+    "price_idr": 579000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike Flight Statement Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 2451000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Icon Swingman Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 1767000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Essential Club Hoodie Hoodie/Sweatshirt (Unisex)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1264000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Team City Edition Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 2563000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Flight Joggers Pants/Tracksuit (Unisex)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1604000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Essential Icon Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 1895000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Flight Warm-up Jacket Apparel (Other) (Unisex)",
+    "category": "Apparel (Other)",
+    "price_idr": 551000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Icon Warm-up Jacket Apparel (Other) (Unisex)",
+    "category": "Apparel (Other)",
+    "price_idr": 476000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Elite Therma Hoodie/Sweatshirt (Unisex)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1345000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Team Sleeveless Top Apparel (Other) (Men's)",
+    "category": "Apparel (Other)",
+    "price_idr": 694000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Elite Warm-up Jacket Apparel (Other) (Men's)",
+    "category": "Apparel (Other)",
+    "price_idr": 431000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Pro Performance Shorts (Unisex)",
+    "category": "Shorts",
+    "price_idr": 528000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Prime Icon Jersey (Women's)",
+    "category": "Jersey",
+    "price_idr": 1416000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Pro Dri-FIT Tee Top/T-Shirt (Unisex)",
+    "category": "Top/T-Shirt",
+    "price_idr": 729000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Club Logo Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 738000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Flight Swingman Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 1118000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Essential AEROREADY Shorts (Men's)",
+    "category": "Shorts",
+    "price_idr": 520000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Prime Graphic Tee Top/T-Shirt (Women's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 702000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Essential Essentials Pants Pants/Tracksuit (Unisex)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 722000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Team Compression Shirt Apparel (Other) (Unisex)",
+    "category": "Apparel (Other)",
+    "price_idr": 469000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Team Association Jersey (Men's)",
+    "category": "Jersey",
+    "price_idr": 1540000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jordan Flight Badge of Sport Tee Top/T-Shirt (Women's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 486000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Flight Warm-up Jacket Apparel (Other) (Men's)",
+    "category": "Apparel (Other)",
+    "price_idr": 438000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes DNA Sleeveless Top Apparel (Other) (Men's)",
+    "category": "Apparel (Other)",
+    "price_idr": 429000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak Club Performance Shorts (Men's)",
+    "category": "Shorts",
+    "price_idr": 568000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Flight Tapered Pants Pants/Tracksuit (Men's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1221000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Prime Logo Tee Top/T-Shirt (Unisex)",
+    "category": "Top/T-Shirt",
+    "price_idr": 697000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike DNA Track Pants Pants/Tracksuit (Unisex)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1111000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike Pro Association Jersey (Unisex)",
+    "category": "Jersey",
+    "price_idr": 1063000,
+    "currency": "IDR",
+    "image_url": "https://img.ncrsport.com/img/storage/large/AA7101-100-1.jpg"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Essential Badge of Sport Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 695000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Flight Dri-FIT Tee Top/T-Shirt (Women's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 590000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Club Compression Shirt Apparel (Other) (Women's)",
+    "category": "Apparel (Other)",
+    "price_idr": 909000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "ADIDAS Prime Essentials Hoodie Hoodie/Sweatshirt (Men's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 879000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "3-Stripes Elite Club Hoodie Hoodie/Sweatshirt (Women's)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 701000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Tarmak DNA Essentials Pants Pants/Tracksuit (Men's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1660000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Flight Essentials Pants Pants/Tracksuit (Men's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1145000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Flight Performance Shorts (Unisex)",
+    "category": "Shorts",
+    "price_idr": 523000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Jumpman Club Sleeveless Top Apparel (Other) (Women's)",
+    "category": "Apparel (Other)",
+    "price_idr": 213000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Team Dri-FIT Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 369000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Essential Primeblue Shorts (Unisex)",
+    "category": "Shorts",
+    "price_idr": 824000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1sEmX60qRDcKn3y6tkyhpvE475feAiRwGw&s"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Flight Graphic Tee Top/T-Shirt (Unisex)",
+    "category": "Top/T-Shirt",
+    "price_idr": 641000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+  },
+  {
+    "brand": "Nike/Jordan",
+    "product_name": "Nike Elite Joggers Pants/Tracksuit (Women's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1295000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Essential Fleece Hoodie/Sweatshirt (Unisex)",
+    "category": "Hoodie/Sweatshirt",
+    "price_idr": 1901000,
+    "currency": "IDR",
+    "image_url": "https://cdn11.bigcommerce.com/s-qn3iqij/images/stencil/1280x1280/products/1500/4508/OU_Black_Basketball_Hoodie__82237.1635966154.jpg?c=2"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak Club Long-Sleeve Tee Apparel (Other) (Women's)",
+    "category": "Apparel (Other)",
+    "price_idr": 552000,
+    "currency": "IDR",
+    "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSA6hYjWVrOT4fVxnpIf325LucXKwabLp1sCw_mXovtuQwvzko2CmgKvEB2OQud7Gyf1wz9bcth52IQZ1uAOXp9Jo6QK-1fVQgK0Qt8Lo_YEwVWF93a2PuO"
+  },
+  {
+    "brand": "adidas",
+    "product_name": "adidas Flight Essentials Pants Pants/Tracksuit (Women's)",
+    "category": "Pants/Tracksuit",
+    "price_idr": 1088000,
+    "currency": "IDR",
+    "image_url": "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_86e57e0e-70e3-42ec-89c7-2d3b3c7af569.jpg"
+  },
+  {
+    "brand": "Tarmak/Decathlon",
+    "product_name": "Decathlon Tarmak DNA Graphic Tee Top/T-Shirt (Men's)",
+    "category": "Top/T-Shirt",
+    "price_idr": 733000,
+    "currency": "IDR",
+    "image_url": "https://m.media-amazon.com/images/I/B1LnBhDe1qL._CLa%7C2140%2C2000%7C71gajwEfH0L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
   }
 ]
