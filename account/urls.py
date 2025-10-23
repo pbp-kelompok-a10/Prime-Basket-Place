@@ -11,5 +11,6 @@ urlpatterns = [
     path('password/', views.change_password, name='password'),
     path('favorites/',views.show_favorites,name='favorites' ),
     # views.favorite_products, name='favorite'
+    path('delete/', views.delete_account, name='delete_account'),
 
 ]

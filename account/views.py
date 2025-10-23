@@ -171,3 +171,28 @@ def show_favorites(request):
     # }
     # , context
     return render(request, 'favorite.html')
+
+@login_required(login_url='login/')
+def delete_account(request):
+    """
+    Menghapus akun pengguna yang sedang login.
+    """
+    # Hanya izinkan metode POST untuk keamanan
+    if request.method == 'POST':
+        user = request.user
+        
+        # Logout pengguna terlebih dahulu
+        logout(request)
+        
+        # Hapus objek user. 
+        # Objek Account yang terkait akan terhapus otomatis 
+        # karena on_delete=models.CASCADE.
+        user.delete()
+        
+        messages.success(request, 'Akun Anda telah berhasil dihapus.')
+        
+        # Arahkan ke halaman login (atau homepage)
+        return redirect('account:login') 
+    
+    # Jika ada yang mencoba mengakses via GET, arahkan kembali ke profil
+    return redirect('account:show_profile')
