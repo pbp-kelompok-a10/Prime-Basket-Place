@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Prime Basket Place{% endblock title %}</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F8F8; /* Matches the light gray background */
+        }
+        
+        .text-custom-purple { color: #4F00C1; }
+        .border-custom-purple { border-color: #4F00C1; }
+        .placeholder-custom-purple::placeholder { color: #A886E4; } /* Lighter purple for placeholder */
+        .focus\:ring-custom-purple:focus { --tw-ring-color: #4F00C1; }
+
+        .text-custom-yellow { color: #FFC72C; } /* Gold/Yellow color for "BASKET" */
+    </style>
+</head>
+<body class="text-gray-800">
+    
+    {% include 'navbar.html' %}
+
+    <main class="container mx-auto p-4 sm:p-8">
+        {% block content %}
+        {% endblock content %}
+    </main>
+
+    <footer class="text-center p-8 mt-16 text-gray-500 text-sm">
+        <p>&copy; {% now "Y" %} Prime Basket Place. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

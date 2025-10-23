@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ product.name }} - Detail Product{% endblock title %}
+
+{% block content %}
+<div class="w-full max-w-6xl mx-auto">
+    <h1 class="text-4xl font-bold text-custom-purple mb-8">Detail Product</h1>
+    <div class="flex flex-col md:flex-row gap-8">
+        <div class="w-full md:w-2/5 flex-shrink-0">
+            <div class="aspect-square bg-gray-200 rounded-lg shadow-md mb-4 overflow-hidden">
+                <img src="{{ product.image_url }}" alt="{{ product.name }}" class="w-full h-full object-cover">
+            </div>
+            <button class="text-custom-purple"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg></button>
+        </div>
+
+        <div class="w-full md:w-3/5">
+            <h2 class="text-3xl font-bold mb-2">{{ product.name }}</h2>
+            <p class="text-2xl font-semibold text-custom-purple mb-3">IDR {{ product.price|floatformat:0 }}</p>
+            <p class="text-lg font-medium mb-6"><span class="font-semibold">Category:</span> {{ product.category }}</p>
+
+            <h3 class="text-xl font-semibold mb-2">Description</h3>
+            {% if product.description %}
+                <p class="text-base leading-relaxed text-gray-600 mb-6 whitespace-pre-wrap">{{ product.description }}</p>
+            {% else %}
+                <p class="text-gray-500 italic mb-6">No description available for this product.</p>
+            {% endif %}
+
+            {% if user.is_authenticated %}
+            <div class="mt-6 border-t pt-6">
+                <form action="{% url 'detail_product:update_or_create_detail' product.pk %}" method="POST" class="space-y-4">
+                    {% csrf_token %}
+                    <h4 class="font-semibold text-lg">
+                        {% if product.description %}Update Details{% else %}Create Details{% endif %}
+                    </h4>
+                    {{ form.description }}
+                    <button type="submit" class="bg-blue-600 text-white font-bold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors">Save Description</button>
+                </form>
+
+                {% if product.description %}
+                <form action="{% url 'detail_product:delete_detail' product.pk %}" method="POST" class="mt-4" onsubmit="return confirm('Are you sure you want to delete the description?');">
+                    {% csrf_token %}
+                    <button type="submit" class="text-red-600 hover:text-red-800 font-semibold">Delete Description</button>
+                </form>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
