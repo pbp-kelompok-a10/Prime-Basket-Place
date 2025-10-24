@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="bg-[#F8F8F8] min-h-screen py-10">
+<div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8">
+
+<div class="bg-white rounded-xl shadow p-4 w-full md:w-1/4 h-fit">
+  <h2 class="text-xl font-semibold text-[#391C8C] mb-4">Account</h2>
+  <ul class="space-y-3">
+    <li>
+      <a href="{% url 'account:show_profile' %}" class="flex items-center gap-2 p-2 rounded-lg text-gray-700 hover:bg-[#B1AFCA] hover:text-[#391C8C]">
+        <i class="fa-solid fa-user"></i> Profile Settings
+      </a>
+    </li>
+    <li>
+      <a href="{% url 'account:password' %}" class="flex items-center gap-2 p-2 rounded-lg text-gray-700 hover:bg-[#B1AFCA] hover:text-[#391C8C]">
+        <i class="fa-solid fa-lock"></i> Password
+      </a>
+    </li>
+    <li>
+      <a href="{% url 'account:favorites' %}" class="flex items-center gap-2 p-2 rounded-lg bg-[#B1AFCA] text-[#391C8C] font-medium">
+        <i class="fa-solid fa-heart"></i> Favorite
+      </a>
+    </li>
+    <li>
+      <a href="{% url 'account:logout' %}" class="flex items-center gap-2 p-2 rounded-lg text-gray-700 hover:bg-[#B1AFCA] hover:text-[#391C8C]">
+        <i class="fa-solid fa-power-off"></i> Logout
+      </a>
+    </li>
+
+    <li><hr class="my-2"></li>
+
+    <li>
+      <button id="deleteAccountBtn" class="flex w-full items-center gap-2 p-2 rounded-lg text-red-600 hover:bg-red-100 hover:text-red-800 transition-colors">
+        <i class="fa-solid fa-trash-can"></i> Delete Account
+      </button>
+    </li>
+  </ul>
+</div>
+
+<div class="flex-1 bg-white rounded-xl shadow p-8">
+  
+  <h1 class="text-3xl font-bold text-[#391C8C] mb-6">
+    Favourite
+  </h1>
+
+  {% if favorite_products %}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {% for product in favorite_products %}
+        <div class="group relative border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <a href="{% url 'detail_product:show_detail' product.pk %}">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-100">
+              <img src="{{ product.image_url }}" alt="{{ product.name }}" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+            </div>
+            <div class="p-4">
+              <h3 class="text-base font-semibold text-gray-900">{{ product.name }}</h3>
+              <p class="mt-1 text-sm text-gray-500">{{ product.brand }}</p>
+              <p class="mt-2 text-lg font-bold text-[#391C8C]">IDR {{ product.price|floatformat:0 }}</p>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="border-2 border-dashed border-gray-300 rounded-lg bg-gray-50 py-20 text-center">
+      <p class="text-gray-500 font-medium">Anda belum menambahkan produk apapun ke daftar favorit.</p>
+    </div>
+  {% endif %}
+  </div>
+
+</div>
+</div>
+
+<div id="deleteModal" class="hidden fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
+<div class="bg-white rounded-xl p-6 w-full max-w-sm relative shadow-lg text-center">
+
+<div class="text-red-500 mb-4">
+  <i class="fa-solid fa-triangle-exclamation text-5xl"></i>
+</div>
+
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Are you sure?</h3>
+<p class="text-gray-600 mb-6">
+  Do you really want to delete your account? This process cannot be undone.
+</p>
+
+<form method="POST" action="{% url 'account:delete_account' %}">
+  {% csrf_token %}
+  <div class="flex justify-center gap-4">
+    <button type="button" id="cancelDeleteBtn" 
+            class="flex-1 border border-gray-300 px-6 py-2 rounded-lg text-gray-700 font-medium hover:bg-gray-100">
+      No
+    </button>
+    <button type="submit" 
+            class="flex-1 bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700">
+      Yes
+    </button>
+  </div>
+</form>
+
+</div>
+</div>
+
+<script>
+const deleteAccountBtn = document.getElementById('deleteAccountBtn');
+const deleteModal = document.getElementById('deleteModal');
+const cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
+
+// Tampilkan modal saat tombol delete di-klik
+deleteAccountBtn.addEventListener('click', () => deleteModal.classList.remove('hidden'));
+
+// Sembunyikan modal saat tombol "No" di-klik
+cancelDeleteBtn.addEventListener('click', () => deleteModal.classList.add('hidden'));
+
+// Sembunyikan modal jika klik di luar area modal (latar belakang gelap)
+deleteModal.addEventListener('click', (e) => {
+if (e.target === deleteModal) {
+deleteModal.classList.add('hidden');
+}
+});
+</script>
+
+{% endblock %}

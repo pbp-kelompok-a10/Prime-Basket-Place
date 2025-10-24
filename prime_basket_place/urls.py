@@ -23,9 +23,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('account/', include('account.urls')),
     path('', include('Homepage.urls')),
-    path('detail_product/', include('detail_product.urls')),
+    path('detail/', include('detail_product.urls')),
     path('dashboard/', include('dashboard.urls')),
+    path('reviews/', include('reviews.urls')),
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

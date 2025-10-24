@@ -1,0 +1,28 @@
+<div id="reviews">
+  <h4>Ulasan Pengguna</h4>
+  {% for review in product.reviews.all %}
+    <div class="border p-3 mb-2 rounded">
+      <strong>{{ review.user.username }}</strong> 
+      - <span>{{ review.rating }}⭐</span><br>
+      <small>{{ review.created_at|date:"d M Y" }}</small>
+      <p>{{ review.comment }}</p>
+      {% if review.photo %}
+        <img src="{{ review.photo.url }}" class="img-fluid rounded mb-2" style="max-width:150px;">
+      {% endif %}
+      {% if user == review.user %}
+        <a href="{% url 'reviews:update_review' review.id %}" class="btn btn-sm btn-outline-warning">Edit</a>
+        <a href="{% url 'reviews:delete_review' review.id %}" class="btn btn-sm btn-outline-danger">Hapus</a>
+      {% endif %}
+    </div>
+  {% empty %}
+    <p>Belum ada review untuk produk ini.</p>
+  {% endfor %}
+
+  {% if user.is_authenticated %}
+    {% if not user_has_reviewed %}
+      <a href="{% url 'reviews:create_review' product.id %}" class="btn btn-primary mt-3">📝 Tulis Review</a>
+    {% endif %}
+  {% else %}
+    <a href="{% url 'account:login' %}?next={{ request.path }}" class="btn btn-outline-primary mt-3">Login untuk menulis review</a>
+  {% endif %}
+</div>

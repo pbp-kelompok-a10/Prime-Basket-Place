@@ -49,10 +49,11 @@
         </div>
 
         <!-- Tombol di bawah gambar -->
-        <div class="mt-4 flex gap-3">
+        {% if not request.user.is_staff %}
         <a href="{% url 'dashboard:edit_product' product.pk %}" class="btn-purple">
             Edit Product
         </a>
+        {% endif %}
         <a href="{% url 'dashboard:delete_product' product.pk %}" class="btn-red">
             Delete Product
         </a>

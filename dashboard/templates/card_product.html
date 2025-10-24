@@ -5,30 +5,39 @@
   .border-custom-purple {
     border-color: #6C63FF;
   }
+
+  /* Make product cards consistent height */
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 360px; /* Adjust this as needed */
+  }
+
+  /* Truncate long text */
+  .truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 </style>
 
 {% block content %}
 <section class="max-w-6xl mx-auto mt-8">
 
-  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 justify-center">
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center">
     {% for product in products %}
-    <a href="{% url 'dashboard:detail_product' product.pk %}" class="relative border-2 border-custom-purple rounded-xl overflow-hidden bg-white hover:shadow-md transition max-w-sm mx-auto">
+    <a href="{% url 'dashboard:detail_product' product.pk %}"
+       class="product-card relative border-2 border-custom-purple rounded-xl overflow-hidden bg-white hover:shadow-md transition max-w-sm mx-auto">
 
       <!-- Gambar produk -->
-      <div class="relative w-full h-56 bg-gray-100 flex items-center justify-center">
+      <div class="relative w-full h-48 bg-gray-100 flex items-center justify-center">
         {% if product.image_url %}
           <img src="{{ product.image_url }}" alt="{{ product.name }}" class="object-cover w-full h-full">
         {% else %}
           <span class="text-gray-400">No Image</span>
         {% endif %}
-
-        <!-- Label “New” atau “Featured” -->
-        {% comment %} {% if product.is_new %}
-          <span class="absolute top-3 left-3 bg-red-400 text-white text-xs font-semibold px-2 py-1 rounded-full">New</span>
-        {% endif %}
-        {% if product.is_featured %}
-          <span class="absolute top-3 left-16 bg-green-400 text-white text-xs font-semibold px-2 py-1 rounded-full">Featured</span>
-        {% endif %} {% endcomment %}
 
         <!-- Tombol favorit -->
         <button class="absolute top-3 right-3 text-custom-purple hover:text-purple-700 transition">
@@ -43,11 +52,11 @@
       </div>
 
       <!-- Informasi produk -->
-      <div class="bg-custom-yellow p-4 mt-auto">
-        <p class="text-sm text-gray-800 font-medium">{{ product.category }}</p>
-        <p class="text-base font-semibold text-gray-900 truncate">{{ product.name }}</p>
-        <p class="text-sm text-gray-700">Rp {{ product.price|floatformat:0 }}</p>
-        </div>
+      <div class="bg-custom-yellow p-4 flex flex-col justify-between flex-grow">
+        <p class="text-sm text-gray-800 font-medium truncate">{{ product.category }}</p>
+        <p class="text-base font-semibold text-gray-900 truncate-2">{{ product.name }}</p>
+        <p class="text-sm text-gray-700 mt-2">Rp {{ product.price|floatformat:0 }}</p>
+      </div>
     </a>
     {% empty %}
       <p class="text-gray-500">No products available.</p>
