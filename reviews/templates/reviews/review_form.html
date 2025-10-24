@@ -5,6 +5,6 @@
   {% csrf_token %}
   {{ form.as_p }}
   <button type="submit" class="btn btn-primary">Kirim</button>
-  <a href="{% url 'product_detail' form.instance.product.id %}" class="btn btn-secondary">Batal</a>
+  <a href="{% url 'detail_product:show_detail' form.instance.product.id %}" class="btn btn-secondary">Batal</a>
 </form>
 {% endblock %}

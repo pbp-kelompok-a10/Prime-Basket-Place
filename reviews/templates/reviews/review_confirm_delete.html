@@ -20,7 +20,7 @@
       <form method="POST">
         {% csrf_token %}
         <button type="submit" class="btn btn-danger px-4">Ya, Hapus</button>
-        <a href="{% url 'product_detail' review.product.id %}" class="btn btn-secondary px-4 ms-2">Batal</a>
+        <a href="{% url 'detail_product:show_detail' review.product.id %}" class="btn btn-secondary px-4 ms-2">Batal</a>
       </form>
     </div>
   </div>
