@@ -1,0 +1,57 @@
+<style>
+  .bg-custom-yellow {
+    background-color: #FFC72C;
+  }
+  .border-custom-purple {
+    border-color: #6C63FF;
+  }
+</style>
+
+{% block content %}
+<section class="max-w-6xl mx-auto mt-8">
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 justify-center">
+    {% for product in products %}
+    <a href="{% url 'dashboard:detail_product' product.pk %}" class="relative border-2 border-custom-purple rounded-xl overflow-hidden bg-white hover:shadow-md transition max-w-sm mx-auto">
+
+      <!-- Gambar produk -->
+      <div class="relative w-full h-56 bg-gray-100 flex items-center justify-center">
+        {% if product.image_url %}
+          <img src="{{ product.image_url }}" alt="{{ product.name }}" class="object-cover w-full h-full">
+        {% else %}
+          <span class="text-gray-400">No Image</span>
+        {% endif %}
+
+        <!-- Label “New” atau “Featured” -->
+        {% comment %} {% if product.is_new %}
+          <span class="absolute top-3 left-3 bg-red-400 text-white text-xs font-semibold px-2 py-1 rounded-full">New</span>
+        {% endif %}
+        {% if product.is_featured %}
+          <span class="absolute top-3 left-16 bg-green-400 text-white text-xs font-semibold px-2 py-1 rounded-full">Featured</span>
+        {% endif %} {% endcomment %}
+
+        <!-- Tombol favorit -->
+        <button class="absolute top-3 right-3 text-custom-purple hover:text-purple-700 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5
+                     4.5 0 116.364 6.364L12 21.364l-7.682-7.682a4.5
+                     4.5 0 010-6.364z"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Informasi produk -->
+      <div class="bg-custom-yellow p-4 mt-auto">
+        <p class="text-sm text-gray-800 font-medium">{{ product.category }}</p>
+        <p class="text-base font-semibold text-gray-900 truncate">{{ product.name }}</p>
+        <p class="text-sm text-gray-700">Rp {{ product.price|floatformat:0 }}</p>
+        </div>
+    </a>
+    {% empty %}
+      <p class="text-gray-500">No products available.</p>
+    {% endfor %}
+  </div>
+</section>
+{% endblock content %}

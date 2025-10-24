@@ -35,10 +35,11 @@ Modul Account berfungsi sebagai pusat identitas dan aktivitas pengguna di **Prim
 Di dalam modul ini, pengguna dapat melakukan berbagai hal seperti mengelola profil pribadi, melihat riwayat transaksi pembelian maupun penjualan alat basket, serta memantau produk yang pernah mereka ulas atau sukai.  
 
 ⚙️ **Fitur Utama:**  
-- Mengubah **password**.  
+- Mengubah **profil dan password**.  
 - Memperbarui **informasi profil**.  
 - Melihat **status transaksi dan pengiriman** secara *real-time*.  
 - Melihat **riwayat transaksi**, **produk yang diulas**, dan **produk yang disukai**.  
+- Menghapus **Akun dari sisi pengguna atau admin** 
 
 🔒 **Akses Pengguna:**  
 - **User:** Akses penuh terhadap fitur personal.  
@@ -50,8 +51,8 @@ Di dalam modul ini, pengguna dapat melakukan berbagai hal seperti mengelola prof
 |----------|------------|--------|
 | **Read** | Melihat data profil dan riwayat aktivitas | User, Admin |
 | **Update** | Mengubah profil dan password | User |
-| **Delete** | — | — |
-| **Create** | — | — |
+| **Delete** | Mengubah profil dan password | User |
+| **Create** | Menghapus akun pengguna dari sistem | User, Admin |
 
 ---
 
@@ -72,9 +73,9 @@ Terdapat pula fitur *slider* untuk menampilkan produk-produk populer, direkomend
 | Operasi | Deskripsi | Akses |
 |----------|------------|--------|
 | **Read** | Menampilkan data produk di homepage | Guest, User, Admin |
-| **Create** | — | — |
-| **Update** | — | — |
-| **Delete** | — | — |
+| **Create** | Menambahkan slider promosi atau diskon produk | Admin |
+| **Update** | Mengubah produk di dalam slider | Admin |
+| **Delete** | Menghapus konten slider dan produk di homepage | Admin |
 
 ---
 
@@ -133,26 +134,25 @@ Hanya pengguna terdaftar yang bisa menulis review.
 
 ---
 
-### 🧾 **Product Catalog**
+### 🧾 **Detail Product**
 
 🧠 **Deskripsi:**  
-Modul ini memuat katalog produk basket yang memungkinkan pengguna melihat detail produk, memberikan review
-pada produk, dan memberikan rating pada produk
+Modul ini memuat informasi detail mengenai suatu produk basket.  
+Terdapat fitur **masukkan keranjang** dan **love button** untuk menandai produk favorit.  
+Selain itu, template dari **Review App** ditampilkan di bagian bawah halaman detail produk.  
 
 ⚙️ **Fitur Utama:**  
 - Menampilkan detail lengkap produk.  
-- Memberikan review pada produk
-- mengedit review dan rating yang sudah diberikan
-- menghapus review dan rating yang sudah diberikan
-- admin dapat menghapus review dan rating yang dianggap menjatuhkan dan tidak sesuai realita 
+- Tombol **Add to Cart** dan **Love/Favorite**.  
+- Menampilkan review dari pengguna.  
 
 🧾 **CRUD:**
 | Operasi | Deskripsi | Akses |
 |----------|------------|--------|
 | **Read** | Menampilkan detail produk | Semua |
-| **Create** | Membuat review dan menambahkan rating | User |
-| **Update** | Mengedit review dan rating yang sudah diberi pada produk | User |
-| **Delete** | Menghapus review dan rating yang sudah diberikan | Admin and User |
+| **Create** | Membuat detail baru dari produk | User |
+| **Update** | Memperbarui detail produk | User |
+| **Delete** | Menghapus detail produk | User |
 
 ---
 

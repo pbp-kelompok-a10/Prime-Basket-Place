@@ -1,0 +1,54 @@
+<style>
+.btn-purple {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4F00C1;
+  color: white;
+  border: none;
+  border-radius: 24px 24px 24px 24px; 
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.btn-purple:hover {
+  background-color: #3e009c;
+}
+</style>
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1 class="hidden md:flex items-center space-x-10 font-semibold text-custom-purple mb-8 text-3xl">Edit Product</h1>
+
+{% comment %} <form method="POST">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Edit Product"/>
+            </td>
+        </tr>
+    </table>
+</form> {% endcomment %}
+
+<form method="POST" class="bg-white p-8 rounded-xl shadow-md space-y-6">
+  {% csrf_token %}
+  {% for field in form %}
+    <div>
+      <label class="block text-gray-700 font-semibold mb-2">{{ field.label }}</label>
+      {{ field }}
+      {% if field.errors %}
+        <p class="text-red-600 text-sm mt-1">{{ field.errors }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+  
+  <button type="submit" class="btn-purple w-full">Edit Productt</button>
+</form>
+
+
+{% endblock %}
