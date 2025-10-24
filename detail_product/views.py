@@ -4,7 +4,7 @@ from .models import Product
 from .forms import DetailForm
 
 def show_detail(request, pk):
-    product = get_object_or_404(Product, pk=pk)
+    product = get_object_or_404(Product.objects.prefetch_related('reviews__user'), pk=pk)
     form = DetailForm(instance=product)
     context = { 'product': product, 'form': form }
     return render(request, 'detail_product/product_detail.html', context)

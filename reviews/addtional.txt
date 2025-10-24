@@ -1,0 +1,29 @@
+prime_basket_place/settings.py
+
+INSTALLED_APPS = ['reviews']
+
+# 🖼️ Konfigurasi Media Files (upload user, termasuk foto review)
+import os
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+Setelah itu, buat folder-nya manual (di root project):
+prime-basket-place/
+├── media/              ← 🆕 Folder ini akan otomatis diisi oleh upload foto review
+│
+├── reviews/
+├── manage.py
+
+
+Agar foto bisa tampil di browser saat DEBUG=True, buka:
+prime_basket_place/urls.py
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    # ... route kamu yang lain
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
