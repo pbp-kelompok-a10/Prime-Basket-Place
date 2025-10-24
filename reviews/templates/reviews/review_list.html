@@ -19,10 +19,10 @@
   {% endfor %}
 
   {% if user.is_authenticated %}
-    {% if not product.reviews.filter(user=request.user).exists %}
+    {% if not user_has_reviewed %}
       <a href="{% url 'reviews:create_review' product.id %}" class="btn btn-primary mt-3">📝 Tulis Review</a>
     {% endif %}
   {% else %}
-    <a href="{% url 'login' %}?next={{ request.path }}" class="btn btn-outline-primary mt-3">Login untuk menulis review</a>
+    <a href="{% url 'account:login' %}?next={{ request.path }}" class="btn btn-outline-primary mt-3">Login untuk menulis review</a>
   {% endif %}
 </div>

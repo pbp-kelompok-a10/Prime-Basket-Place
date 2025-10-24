@@ -4,7 +4,6 @@
 <div class="bg-[#F8F8F8] min-h-screen py-10">
 <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8">
 
-<!-- Sidebar -->
 <div class="bg-white rounded-xl shadow p-4 w-full md:w-1/4 h-fit">
   <h2 class="text-xl font-semibold text-[#391C8C] mb-4">Account</h2>
   <ul class="space-y-3">
@@ -29,10 +28,8 @@
       </a>
     </li>
 
-    <!-- GARIS PEMISAH -->
     <li><hr class="my-2"></li>
 
-    <!-- TOMBOL DELETE ACCOUNT BARU -->
     <li>
       <button id="deleteAccountBtn" class="flex w-full items-center gap-2 p-2 rounded-lg text-red-600 hover:bg-red-100 hover:text-red-800 transition-colors">
         <i class="fa-solid fa-trash-can"></i> Delete Account
@@ -41,44 +38,42 @@
   </ul>
 </div>
 
-<!-- Konten Utama -->
 <div class="flex-1 bg-white rounded-xl shadow p-8">
   
   <h1 class="text-3xl font-bold text-[#391C8C] mb-6">
     Favourite
   </h1>
 
-  <div class="border-2 border-dashed border-gray-300 rounded-lg bg-gray-50 py-20 text-center">
-    <p class="text-gray-500 font-medium">Grid untuk kartu favorit akan muncul di sini.</p>
-    <!-- 
-      Di sinilah Anda akan menempatkan grid untuk kartu-kartu produk.
-      Contoh:
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {% if favorite_products %}
-          {% for product in favorite_products %}
-            {% include 'includes/card_product.html' with product=product %}
-          {% endfor %}
-        {% else %}
-          <p class="col-span-full text-center text-gray-600 py-10">
-            You haven't added any products to your favorites yet.
-          </p>
-        {% endif %}
-      </div>
-    -->
+  {% if favorite_products %}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {% for product in favorite_products %}
+        <div class="group relative border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <a href="{% url 'detail_product:show_detail' product.pk %}">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-100">
+              <img src="{{ product.image_url }}" alt="{{ product.name }}" class="w-full h-full object-cover object-center group-hover:opacity-75 transition-opacity">
+            </div>
+            <div class="p-4">
+              <h3 class="text-base font-semibold text-gray-900">{{ product.name }}</h3>
+              <p class="mt-1 text-sm text-gray-500">{{ product.brand }}</p>
+              <p class="mt-2 text-lg font-bold text-[#391C8C]">IDR {{ product.price|floatformat:0 }}</p>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="border-2 border-dashed border-gray-300 rounded-lg bg-gray-50 py-20 text-center">
+      <p class="text-gray-500 font-medium">Anda belum menambahkan produk apapun ke daftar favorit.</p>
+    </div>
+  {% endif %}
   </div>
 
 </div>
-
-</div>
 </div>
 
-<!-- ================================== -->
-<!-- MODAL DELETE ACCOUNT -->
-<!-- ================================== -->
 <div id="deleteModal" class="hidden fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
 <div class="bg-white rounded-xl p-6 w-full max-w-sm relative shadow-lg text-center">
 
-<!-- Ikon Peringatan -->
 <div class="text-red-500 mb-4">
   <i class="fa-solid fa-triangle-exclamation text-5xl"></i>
 </div>
@@ -88,7 +83,6 @@
   Do you really want to delete your account? This process cannot be undone.
 </p>
 
-<!-- Tombol Yes/No di dalam Form -->
 <form method="POST" action="{% url 'account:delete_account' %}">
   {% csrf_token %}
   <div class="flex justify-center gap-4">
@@ -106,9 +100,6 @@
 </div>
 </div>
 
-<!-- ================================== -->
-<!-- SCRIPT UNTUK MODAL DELETE -->
-<!-- ================================== -->
 <script>
 const deleteAccountBtn = document.getElementById('deleteAccountBtn');
 const deleteModal = document.getElementById('deleteModal');

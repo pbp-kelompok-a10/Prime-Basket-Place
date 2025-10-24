@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, authenticate, logout
 from django.contrib import messages
@@ -10,7 +10,7 @@ import datetime
 from account.forms import AccountForm
 from account.models import Account
 from django.contrib.auth.models import User
-
+from detail_product.models import Product
 
 @login_required(login_url='login/')
 def show_profile(request):
@@ -153,24 +153,41 @@ def change_password(request):
     messages.success(request, 'Username dan password Anda berhasil diperbarui!')
     return redirect('account:show_profile') # Arahkan ke halaman profil utama
 
+@login_required(login_url='account:login')
+def toggle_favorite(request, product_id):
+    """
+    Menambah atau menghapus produk dari daftar favorit pengguna.
+    """
+    product = get_object_or_404(Product, id=product_id)
+    account, created = Account.objects.get_or_create(user=request.user)
+    
+    if product in account.favorites.all():
+        # Jika sudah ada, hapus dari favorit
+        account.favorites.remove(product)
+        messages.success(request, f'"{product.name}" telah dihapus dari favorit.')
+    else:
+        # Jika belum ada, tambahkan ke favorit
+        account.favorites.add(product)
+        messages.success(request, f'"{product.name}" telah ditambahkan ke favorit.')
+        
+    return redirect('detail_product:show_detail', pk=product_id)
+
+
 @login_required(login_url='login/')
 def show_favorites(request):
     """
-    # Menampilkan halaman 'Favourite'
-    # """
-    # try:
-    #     account = request.user.account
-    #     # Kuerinya akan tetap berfungsi seperti biasa
-    #     favorite_products = account.favorites.all()
-    
-    # except Account.DoesNotExist:
-    #     favorite_products = [] 
+    Menampilkan halaman 'Favourite'
+    """
+    try:
+        account = request.user.account
+        favorite_products = account.favorites.all()
+    except Account.DoesNotExist:
+        favorite_products = [] 
 
-    # context = {
-    #     'favorite_products': favorite_products
-    # }
-    # , context
-    return render(request, 'favorite.html')
+    context = {
+        'favorite_products': favorite_products
+    }
+    return render(request, 'favorite.html', context)
 
 @login_required(login_url='login/')
 def delete_account(request):
