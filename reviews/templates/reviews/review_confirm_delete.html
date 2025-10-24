@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="card shadow-sm">
+    <div class="card-body text-center">
+      <h3 class="mb-4">🗑️ Hapus Review</h3>
+      <p>Apakah kamu yakin ingin menghapus review ini untuk produk <strong>{{ review.product.name }}</strong>?</p>
+
+      <div class="border rounded p-3 my-3 bg-light text-start">
+        <p><strong>Rating:</strong> {{ review.rating }} ⭐</p>
+        <p><strong>Komentar:</strong> {{ review.comment }}</p>
+        {% if review.photo %}
+          <p><strong>Foto:</strong></p>
+          <img src="{{ review.photo.url }}" alt="Review photo" class="img-fluid rounded" style="max-height: 200px;">
+        {% endif %}
+      </div>
+
+      <form method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger px-4">Ya, Hapus</button>
+        <a href="{% url 'product_detail' review.product.id %}" class="btn btn-secondary px-4 ms-2">Batal</a>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
