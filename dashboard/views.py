@@ -54,11 +54,11 @@ def delete_product(request, id):
     product.delete()
     return HttpResponseRedirect(reverse('dashboard:show_main'))
 
-def show_product(request, id):
-    product = get_object_or_404(Product, pk=id)
+# def show_product(request, id):
+#     product = get_object_or_404(Product, pk=id)
     
-    context = {
-        'product' : product
-    }
+#     context = {
+#         'product' : product
+#     }
     
-    return render(request, "detail_product.html", context)
+#     return render(request, "detail_product.html", context)
