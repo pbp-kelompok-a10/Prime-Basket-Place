@@ -49,10 +49,7 @@ INSTALLED_APPS = [
     'detail_product',
     'account',
     'Homepage',
-<<<<<<< HEAD
     'reviews',
-=======
->>>>>>> edcb7885d0e135f4bf37bee4ebf85bca7c621958
 ]
 
 MIDDLEWARE = [

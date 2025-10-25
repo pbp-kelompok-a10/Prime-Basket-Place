@@ -2,15 +2,14 @@
 {% load static %}
 
 {% block content %}
-<!-- Hero Section -->
+
+{% if not request.GET.q %}
 <section 
   class="relative w-full h-[480px] bg-cover bg-center rounded-2xl overflow-hidden"
   style="background-image: url('{% static 'images/HomepageBG.png' %}');">
   
-  <!-- Overlay gelap agar teks terlihat jelas -->
   <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
-  <!-- Teks dan tombol -->
   <div class="relative z-10 flex flex-col justify-center h-full px-8 md:px-16 text-white max-w-lg">
     <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Its Prime Time</h1>
     <a href="#" 
@@ -22,17 +21,23 @@
 
 <div class="my-12"></div>
 
-<!-- Featured Products Slider -->
 {% include 'slider_product.html' %}
 
 <div class="my-12"></div>
-<!-- All Products Grid -->
+{% endif %}
+
+
 <section>
-  <h2 class="text-2xl font-semibold mb-4">All Products</h2>
+  {% if request.GET.q %}
+    <h2 class="text-2xl font-semibold mb-4">{{ request.GET.q|capfirst }} Products</h2>
+  {% else %}
+    <h2 class="text-2xl font-semibold mb-4">All Products</h2>
+  {% endif %}
 
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
     {% for product in product_catalog %}
       <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <a href="{% url 'detail_product:show_detail' product.pk %}">
         {% if product.image_url %}
           <img src="{{ product.image_url }}" alt="{{ product.name }}" class="h-40 w-full object-cover">
         {% else %}
@@ -45,6 +50,7 @@
           <p class="font-semibold truncate">{{ product.name }}</p>
           <p class="text-gray-700 text-sm">Rp{{ product.price }}</p>
         </div>
+        </a>
       </div>
     {% empty %}
       <p class="text-gray-500">Belum ada produk.</p>
