@@ -28,7 +28,7 @@
 
   <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center">
     {% for product in products %}
-    <a href="{% url 'dashboard:detail_product' product.pk %}"
+    <a href="{% url 'detail_product:show_detail' product.pk %}"
        class="product-card relative border-2 border-custom-purple rounded-xl overflow-hidden bg-white hover:shadow-md transition max-w-sm mx-auto">
 
       <!-- Gambar produk -->
