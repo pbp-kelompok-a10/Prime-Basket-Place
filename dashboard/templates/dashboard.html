@@ -21,11 +21,16 @@
 <div class="max-w-6xl mx-auto p-8">
 
   <div class="flex justify-between items-center mb-6">
-    <h1 class="text-3xl font-semibold text-custom-purple">My Products</h1>
-    <a href="{% url 'dashboard:create_product' %}" 
+    {% if user.is_staff%}
+      <h1 class="text-3xl font-semibold text-custom-purple">User Products</h1>
+    {% else %}
+      <h1 class="text-3xl font-semibold text-custom-purple">My Products</h1>
+
+      <a href="{% url 'dashboard:create_product' %}" 
        class="btn-purple">
        + Add New Product
-    </a>
+      </a>
+    {% endif %}
   </div>
 
   {% if product_list %}
