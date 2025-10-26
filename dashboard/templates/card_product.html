@@ -1,66 +1,64 @@
 <style>
-  .bg-custom-yellow {
-    background-color: #FFC72C;
-  }
-  .border-custom-purple {
-    border-color: #6C63FF;
-  }
-
-  /* Make product cards consistent height */
   .product-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 360px; /* Adjust this as needed */
+    height: 360px; /* Fixed height for each card */
+    width:
+    background-color: white;
+    border: 2px solid #6C63FF;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
   }
 
-  /* Truncate long text */
-  .truncate-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  .product-card:hover {
+    transform: scale(1.05); /* Hover effect */
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .product-card .info {
+    padding: 15px;
+    background-color: #FFC72C;
+    flex-grow: 1;
+  }
+
+  .product-card .info .price {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
   }
 </style>
 
-{% block content %}
-<section class="max-w-6xl mx-auto mt-8">
-
-  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center">
+<!-- Product Cards Section -->
+<section class="w-full mx-auto mt-10 px-6">
+  <div class="product-card">
     {% for product in products %}
-    <a href="{% url 'detail_product:show_detail' product.pk %}"
-       class="product-card relative border-2 border-custom-purple rounded-xl overflow-hidden bg-white hover:shadow-md transition max-w-sm mx-auto">
+      <a href="{% url 'detail_product:show_detail' product.pk %}" class="product-card">
+        
+        <!-- Product Image -->
+        <div>
+          {% if product.image_url %}
+            <img src="{{ product.image_url }}" alt="{{ product.name }}">
+          {% else %}
+            <div class="flex justify-center items-center h-full bg-gray-200">No Image</div>
+          {% endif %}
+        </div>
 
-      <!-- Gambar produk -->
-      <div class="relative w-full h-48 bg-gray-100 flex items-center justify-center">
-        {% if product.image_url %}
-          <img src="{{ product.image_url }}" alt="{{ product.name }}" class="object-cover w-full h-full">
-        {% else %}
-          <span class="text-gray-400">No Image</span>
-        {% endif %}
-
-        <!-- Tombol favorit -->
-        <button class="absolute top-3 right-3 text-custom-purple hover:text-purple-700 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-               viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5
-                     4.5 0 116.364 6.364L12 21.364l-7.682-7.682a4.5
-                     4.5 0 010-6.364z"/>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Informasi produk -->
-      <div class="bg-custom-yellow p-4 flex flex-col justify-between flex-grow">
-        <p class="text-sm text-gray-800 font-medium truncate">{{ product.category }}</p>
-        <p class="text-base font-semibold text-gray-900 truncate-2">{{ product.name }}</p>
-        <p class="text-sm text-gray-700 mt-2">Rp {{ product.price|floatformat:0 }}</p>
-      </div>
-    </a>
+        <!-- Product Info -->
+        <div class="info">
+          <p class="text-sm text-gray-800">{{ product.category }}</p>
+          <p class="text-base font-semibold text-gray-900">{{ product.name }}</p>
+          <p class="price">Rp {{ product.price|floatformat:0 }}</p>
+        </div>
+      </a>
     {% empty %}
       <p class="text-gray-500">No products available.</p>
     {% endfor %}
   </div>
 </section>
-{% endblock content %}
