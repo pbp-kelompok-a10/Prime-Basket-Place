@@ -5,6 +5,11 @@
   {% csrf_token %}
   {{ form.as_p }}
   <button type="submit" class="btn btn-primary">Kirim</button>
-  <a href="{% url 'detail_product:show_detail' form.instance.product.id %}" class="btn btn-secondary">Batal</a>
+
+  {% if form.instance.pk %}
+    <a href="{% url 'detail_product:show_detail' form.instance.product.pk %}" class="btn btn-secondary">Batal</a>
+  {% else %}
+    <a href="javascript:history.back()" class="btn btn-secondary ms-2">Batal</a>
+  {% endif %}
 </form>
 {% endblock %}
