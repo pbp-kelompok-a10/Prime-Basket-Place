@@ -24,29 +24,24 @@
             </div>
 
             <div class="hidden md:flex items-center space-x-6">
-			  <form method="GET" action="{% url 'Homepage:homepage' %}">
-                 <div class="relative">
-					<input type="text" name="search" placeholder="Search" class="bg-white border-2 border-custom-purple rounded-xl py-2 px-5 text-custom-purple placeholder-custom-purple focus:outline-none focus:ring-2 focus:ring-custom-purple w-64" value="{{ request.GET.search }}">
-					<button type="submit">
-                      <svg class="w-6 h-6 text-custom-purple absolute right-4 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                      </svg>
-					</button>
+			        <form method="GET" action="{% url 'Homepage:homepage' %}">
+                <div class="relative">
+                  <input type="text" name="search" placeholder="Search" class="bg-white border-2 border-custom-purple rounded-xl py-2 px-5 text-custom-purple placeholder-custom-purple focus:outline-none focus:ring-2 focus:ring-custom-purple w-64" value="{{ request.GET.search }}">
+                  <button type="submit">
+                    <svg class="w-6 h-6 text-custom-purple absolute right-4 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                  </button>
                 </div>
-			  </form>
-                {% if user.is_authenticated %}
-                    <a href="{% url 'account:favorites' %}" class="text-custom-purple">
-                {% else %}
-                    <a href="{% url 'account:login' %}" class="text-custom-purple">
-                {% endif %}
-                        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
-                    </a>
+              </form>
+                <a href="{% url 'account:favorites' %}" class="text-custom-purple"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg></a>
                 {% if user.is_authenticated %}
                     <a href="{% url 'account:show_profile' %}" class="text-custom-purple">
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>
                 {% else %}
                     <a href="{% url 'account:login' %}" class="text-custom-purple">
+                    <p><u>Login</u></p>
                 {% endif %}
-                        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>
                     </a>
             </div>
 
