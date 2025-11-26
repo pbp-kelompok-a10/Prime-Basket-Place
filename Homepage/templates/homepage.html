@@ -3,7 +3,7 @@
 
 {% block content %}
 
-{% if not request.GET.q %}
+{% if not request.GET.q and not request.GET.search %}
 <section 
   class="relative w-full h-[480px] bg-cover bg-center rounded-2xl overflow-hidden"
   style="background-image: url('{% static 'images/HomepageBG.png' %}');">
@@ -12,10 +12,10 @@
 
   <div class="relative z-10 flex flex-col justify-center h-full px-8 md:px-16 text-white max-w-lg">
     <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Its Prime Time</h1>
-    <a href="#" 
+    <button id="scroll-to-products"
        class="inline-block border-2 border-white px-6 py-3 text-lg font-medium hover:bg-white hover:text-black transition-all duration-200 w-fit">
       Shop Now →
-    </a>
+    </button>
   </div>
 </section>
 
@@ -27,8 +27,10 @@
 {% endif %}
 
 
-<section>
-  {% if request.GET.q %}
+<section id="products">
+  {% if request.GET.search %}
+    <h2 class="text-2xl font-semibold mb-4">Hasil Pencarian: "{{ request.GET.search }}"</h2>
+  {% elif request.GET.q %}
     <h2 class="text-2xl font-semibold mb-4">{{ request.GET.q|capfirst }} Products</h2>
   {% else %}
     <h2 class="text-2xl font-semibold mb-4">All Products</h2>
@@ -57,4 +59,22 @@
     {% endfor %}
   </div>
 </section>
+
+<script>
+	//TODO: Button belum scroll smooth ke bagian produk
+	document.addEventListener("DOMContentLoaded", function () {
+		const btn = document.getElementById("scroll-to-products");
+		const target = document.getElementById("products");
+
+		btn.addEventListener("click", function () {
+			const y = target.getBoundingClientRect().top + window.pageYOffset - 40;
+
+			window.scrollTo({
+				top: y,
+				behavior: "smooth"
+			});
+		});
+	});
+</script>
+
 {% endblock content %}
