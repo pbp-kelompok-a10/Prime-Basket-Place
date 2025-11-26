@@ -36,6 +36,8 @@ ALLOWED_HOSTS = ["localhost",
                  "rafsanjani41-primebasketplace.pbp.cs.ui.ac.id"]
 
 
+CSRF_TRUSTED_ORIGINS = ['https://rafsanjani41-primebasketplace.pbp.cs.ui.ac.id']
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -54,6 +56,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

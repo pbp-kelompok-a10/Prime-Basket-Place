@@ -1,4 +1,4 @@
-<!-- product_slider.html -->
+<!-- homepage/templates/slider_product.html -->
 <div class="flex justify-between items-center mb-4">
   <h2 class="text-2xl font-semibold">Featured Products</h2>
   <a href="#" class="text-custom-purple hover:underline font-medium">View All</a>
@@ -8,14 +8,27 @@
 <div class="overflow-x-auto scrollbar-hide">
   <div class="flex gap-6 snap-x snap-mandatory scroll-smooth">
     {% for slider_product in slider_products %}
-      <div class="snap-start shrink-0 w-48 bg-white rounded-xl shadow-sm overflow-hidden">
+      <div class="relative snap-start shrink-0 w-48 bg-white rounded-xl shadow-sm overflow-hidden">
+        
+        <!-- BADGE DISCOUNT (pojok kiri atas) -->
+        {% if slider_product.discount > 0 %}
+          <div class="absolute top-2 left-2 bg-red-300 text-red-800 text-[10px] font-semibold rounded-full w-8 h-8 flex items-center justify-center">
+            {{ slider_product.discount }}%
+          </div>
+        {% endif %}
+
+        <!-- IMAGE -->
         {% if slider_product.product %}
-          <img src="{{ slider_product.product.image_url }}" alt="{{ slider_product.product.name }}" class="h-40 w-full object-cover">
+          <img src="{{ slider_product.product.image_url }}" 
+               alt="{{ slider_product.product.name }}" 
+               class="h-40 w-full object-cover">
         {% else %}
           <div class="h-40 w-full bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
             No Image
           </div>
         {% endif %}
+
+        <!-- TEXT -->
         <div class="p-3 card-product-bg-yellow">
           <p class="text-sm text-gray-500 truncate">{{ slider_product.product.category }}</p>
           <p class="font-semibold truncate">{{ slider_product.product.name }}</p>
@@ -28,7 +41,6 @@
   </div>
 </div>
 
-<!-- Optional CSS (hilangkan scrollbar di semua browser) -->
 <style>
   .scrollbar-hide::-webkit-scrollbar { display: none; }
   .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
