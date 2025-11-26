@@ -11,6 +11,7 @@ def show_main(request):
     slider_products = SliderProduct.objects.all()
 
     query = request.GET.get('q')
+    search = request.GET.get('search')
 
     if query:
         query = query.lower()
@@ -24,6 +25,9 @@ def show_main(request):
             )
         else:
             product_catalog = product_catalog.filter(name__icontains=query)
+
+    if search:
+        product_catalog = product_catalog.filter(Q(name__icontains=search))
 
     context = {
         'product_catalog': product_catalog,
