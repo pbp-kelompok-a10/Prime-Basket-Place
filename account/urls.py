@@ -13,5 +13,9 @@ urlpatterns = [
     path('toggle-favorite/<int:product_id>/', views.toggle_favorite, name='toggle_favorite'),
     # views.favorite_products, name='favorite'
     path('delete/', views.delete_account, name='delete_account'),
+    path('manage-users/', views.manage_users, name='manage_users'),
+    path('make-admin/<int:user_id>/', views.make_admin, name='make_admin'),
+    path('remove-admin/<int:user_id>/', views.remove_admin, name='remove_admin'),
+    path('create-admin/', views.create_admin, name='create_admin'),
 
 ]
