@@ -1,9 +1,36 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import csrf_exempt
 from .models import Product
 from .forms import DetailForm
 from reviews.models import Review 
 from account.models import Account
+import json
+from django.http import HttpResponse, JsonResponse
+from django.views.decorators.http import require_POST
+from django.core import serializers
+
+def show_detail_json(request, pk):
+    # Mengambil product berdasarkan ID
+    data = Product.objects.filter(pk=pk)
+    # Mengembalikan data dalam bentuk JSON
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+@csrf_exempt 
+def update_description_flutter(request, pk):
+    if request.method == 'POST':
+        try:
+            product = Product.objects.get(pk=pk)
+            data = json.loads(request.body)
+            
+            # Update deskripsi
+            product.description = data.get('description', product.description)
+            product.save()
+            
+            return JsonResponse({"status": "success", "message": "Deskripsi berhasil diupdate!"}, status=200)
+        except Product.DoesNotExist:
+            return JsonResponse({"status": "error", "message": "Produk tidak ditemukan"}, status=404)
+    return JsonResponse({"status": "error", "message": "Method not allowed"}, status=401)
 
 def show_detail(request, pk):
     product = get_object_or_404(Product.objects.prefetch_related('reviews__user'), pk=pk)
@@ -32,7 +59,7 @@ def update_or_create_detail(request, pk):
     if request.method == 'POST':
         form = DetailForm(request.POST, instance=product)
         if form.is_valid():
-            form.save()
+            form.save() 
     return redirect('detail_product:show_detail', pk=pk)
 
 @login_required
