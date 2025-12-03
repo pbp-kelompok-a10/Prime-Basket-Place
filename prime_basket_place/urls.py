@@ -26,6 +26,7 @@ urlpatterns = [
     path('detail/', include('detail_product.urls')),
     path('dashboard/', include('dashboard.urls')),
     path('reviews/', include('reviews.urls')),
+    path('auth/', include('authentication.urls')),
 ]
 
 if settings.DEBUG:
