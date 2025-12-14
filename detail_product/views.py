@@ -16,21 +16,28 @@ def show_detail_json(request, pk):
     # Mengembalikan data dalam bentuk JSON
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
-@csrf_exempt 
+@csrf_exempt
 def update_description_flutter(request, pk):
     if request.method == 'POST':
         try:
             product = Product.objects.get(pk=pk)
-            data = json.loads(request.body)
+            # Validasi kepemilikan (opsional, sesuaikan dengan logic bisnis)
+            # if product.user != request.user:
+            #     return JsonResponse({"status": "error", "message": "Unauthorized"}, status=403)
             
-            # Update deskripsi
+            data = json.loads(request.body)
             product.description = data.get('description', product.description)
             product.save()
-            
             return JsonResponse({"status": "success", "message": "Deskripsi berhasil diupdate!"}, status=200)
         except Product.DoesNotExist:
             return JsonResponse({"status": "error", "message": "Produk tidak ditemukan"}, status=404)
     return JsonResponse({"status": "error", "message": "Method not allowed"}, status=401)
+
+def show_all_json(request):
+    # Mengambil SEMUA data product
+    data = Product.objects.all()
+    # Mengembalikan data dalam bentuk JSON
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 def show_detail(request, pk):
     product = get_object_or_404(Product.objects.prefetch_related('reviews__user'), pk=pk)

@@ -5,6 +5,14 @@ from detail_product.models import Product
 from .models import SliderProduct
 from .forms import SliderProductForm
 from django.db.models import Q
+from django.http import HttpResponse
+from django.core import serializers
+from detail_product.models import Product
+
+def show_json(request):
+    # Mengambil semua produk yang sudah di-load ke database
+    data = Product.objects.all()
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 def show_main(request):
     product_catalog = Product.objects.all()
