@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.core import serializers
 from .forms import ProductForm
 from detail_product.models import Product
+import requests
 
 @login_required(login_url=reverse_lazy('account:login'))
 def show_main(request):
@@ -62,3 +64,26 @@ def delete_product(request, id):
 #     }
     
 #     return render(request, "detail_product.html", context)
+
+def show_json_dashboard(request):
+    product_list = Product.objects.filter(user=request.user)
+    json_data = serializers.serialize("json", product_list)
+    return HttpResponse(json_data, content_type="application/json")
+
+def proxy_image(request):
+    image_url = request.GET.get('url')
+    if not image_url:
+        return HttpResponse('No URL provided', status=400)
+    
+    try:
+        # Fetch image from external source
+        response = requests.get(image_url, timeout=10)
+        response.raise_for_status()
+        
+        # Return the image with proper content type
+        return HttpResponse(
+            response.content,
+            content_type=response.headers.get('Content-Type', 'image/jpeg')
+        )
+    except requests.RequestException as e:
+        return HttpResponse(f'Error fetching image: {str(e)}', status=500)

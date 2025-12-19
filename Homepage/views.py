@@ -5,7 +5,7 @@ from detail_product.models import Product
 from .models import SliderProduct
 from .forms import SliderProductForm
 from django.db.models import Q
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.core import serializers
 from detail_product.models import Product
 
