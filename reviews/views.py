@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+<<<<<<< HEAD
 from django.http import HttpResponseForbidden, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.db.models import Avg
@@ -8,6 +9,12 @@ from .models import Review
 from .forms import ReviewForm
 from detail_product.models import Product
 import json
+=======
+from django.http import HttpResponseForbidden
+from .models import Review
+from .forms import ReviewForm
+from detail_product.models import Product 
+>>>>>>> main
 
 
 @login_required
@@ -15,6 +22,10 @@ def create_review(request, product_id):
     """Membuat review baru untuk produk tertentu."""
     product = get_object_or_404(Product, id=product_id)
 
+<<<<<<< HEAD
+=======
+    # Cegah user yang sudah pernah review produk ini
+>>>>>>> main
     existing = Review.objects.filter(product=product, user=request.user).first()
     if existing:
         messages.warning(request, "Kamu sudah pernah memberi review untuk produk ini.")
@@ -45,6 +56,10 @@ def update_review(request, pk):
     """Mengedit review milik user."""
     review = get_object_or_404(Review, pk=pk)
 
+<<<<<<< HEAD
+=======
+    # Cegah update review orang lain
+>>>>>>> main
     if review.user != request.user:
         return HttpResponseForbidden("Kamu tidak punya izin untuk mengedit review ini.")
 
@@ -70,6 +85,10 @@ def delete_review(request, pk):
     """Menghapus review milik user."""
     review = get_object_or_404(Review, pk=pk)
 
+<<<<<<< HEAD
+=======
+    # Cegah hapus review orang lain
+>>>>>>> main
     if review.user != request.user:
         return HttpResponseForbidden("Kamu tidak punya izin untuk menghapus review ini.")
 
@@ -84,6 +103,7 @@ def delete_review(request, pk):
         'title': 'Hapus Review',
     }
     return render(request, 'reviews/review_confirm_delete.html', context)
+<<<<<<< HEAD
 
 
 def get_reviews_json(request, product_id):
@@ -178,3 +198,5 @@ def create_review_flutter(request, product_id):
         'status': 'error',
         'message': 'Invalid method'
     }, status=405)
+=======
+>>>>>>> main
