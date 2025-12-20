@@ -6,7 +6,10 @@ from django.contrib import messages
 from django.core import serializers
 from .forms import ProductForm
 from detail_product.models import Product
-import requests
+from account.models import Account
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.html import strip_tags
+import requests, json
 
 @login_required(login_url=reverse_lazy('account:login'))
 def show_main(request):
@@ -14,8 +17,11 @@ def show_main(request):
         product_list = Product.objects.all()
     else:
         product_list = Product.objects.filter(user=request.user)
+        
+    account, _ = Account.objects.get_or_create(user=request.user)
+    is_favorite = account.favorites.all()
 
-    context = {'product_list': product_list}
+    context = {'product_list': product_list, 'is_favorite': is_favorite}
     return render(request, "dashboard.html", context)
 
 def create_product(request):
@@ -87,3 +93,49 @@ def proxy_image(request):
         )
     except requests.RequestException as e:
         return HttpResponse(f'Error fetching image: {str(e)}', status=500)
+    
+@csrf_exempt
+def create_product_flutter(request):
+    if request.method != 'POST':
+        return JsonResponse(
+            {"status": "error", "message": "Invalid request method"},
+            status=405
+        )
+
+    try:
+        data = json.loads(request.body)
+        fields = data.get("fields", {})
+
+        name = strip_tags(fields.get("name", ""))
+        brand = strip_tags(fields.get("brand", ""))
+        category = fields.get("category", "Other")
+        price = fields.get("price", 0)
+        image_url = fields.get("image_url", "")
+        description = strip_tags(fields.get("description", ""))
+
+        product = Product.objects.create(
+            name=name,
+            brand=brand,
+            category=category,
+            price=price,
+            image_url=image_url,
+            description=description,
+            user=request.user if request.user.is_authenticated else None
+        )
+
+        return JsonResponse(
+            {
+                "status": "success",
+                "product_id": product.pk
+            },
+            status=201
+        )
+
+    except Exception as e:
+        return JsonResponse(
+            {
+                "status": "error",
+                "message": str(e)
+            },
+            status=400
+        )
