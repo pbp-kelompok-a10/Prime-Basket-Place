@@ -35,7 +35,7 @@
 
   {% if product_list %}
     <!-- Include Card Component -->
-    {% include 'card_product.html' with products=product_list %}
+    {% include 'card_product.html' with products=product_list fav=is_favorite%}
   {% else %}
     <p class="text-gray-600 italic">You have no products yet.</p>
   {% endif %}

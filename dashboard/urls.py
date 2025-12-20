@@ -11,4 +11,5 @@ urlpatterns = [
     # path('product/<int:id>/detail', show_product, name='detail_product'),
     path('json/', show_json_dashboard, name='show_json_dashboard'),
     path('proxy-image/', proxy_image, name='proxy_image'),
+    path('create-product-flutter/', create_product_flutter, name='create_product_flutter'),
 ]
