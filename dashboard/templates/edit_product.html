@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="flex items-center justify-center min-h-screen bg-[#f8f8f8]">
+  <div class="bg-white p-10 rounded-xl shadow-md w-full max-w-md">
+    <h1 class="text-3xl font-bold text-center text-custom-purple mb-2">Edit Product</h1>
+    <p class="text-center text-gray-600 mb-6">Fill the details to edit your product</p>
+
+    <form method="POST" class="space-y-6">
+      {% csrf_token %}
+      {% for field in form %}
+      <div>
+        <label class="block text-gray-700 font-semibold mb-2">{{ field.label }}</label>
+        {{ field }}
+        {% if field.errors %}
+        <p class="text-red-600 text-sm mt-1">{{ field.errors }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+
+      <button type="submit" class="w-full bg-[#4F00C1] text-white py-3 rounded-lg font-semibold hover:bg-[#3e009c] transition">
+        Edit Product
+      </button>
+    </form>
+  </div>
+</div>
+
+<style>
+input, select, textarea {
+  @apply w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#4F00C1] bg-gray-50;
+}
+</style>
+{% endblock %}

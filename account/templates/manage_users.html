@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="w-full min-h-screen bg-[#F8F8F8] flex justify-center p-6">
+  <div class="w-full max-w-6xl">
+
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-bold text-[#391C8C]">Manage Users</h1>
+
+      <a href="{% url 'account:create_admin' %}"
+         class="px-5 py-2 rounded-md bg-[#391C8C] text-white hover:bg-[#522E9B] transition">
+        + Create Admin
+      </a>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white border border-[#D7D5E9] rounded-lg shadow-sm overflow-hidden">
+
+      <table class="w-full text-left">
+        
+        <!-- Table Header -->
+        <thead class="bg-[#F3F1FC] border-b border-[#D7D5E9] text-[#391C8C]">
+          <tr>
+            <th class="py-3 px-4 font-semibold">Username</th>
+            <th class="py-3 px-4 font-semibold">Role</th>
+            <th class="py-3 px-4 text-right font-semibold">Actions</th>
+          </tr>
+        </thead>
+
+        <tbody class="text-gray-700 text-sm">
+
+          {% for user in users %}
+          <tr class="hover:bg-[#FAF8FF] transition">
+
+            <!-- Username -->
+            <td class="py-3 px-4 font-medium">
+              {{ user.username }}
+            </td>
+
+            <!-- Role -->
+            <td class="py-3 px-4">
+              {% if user.account %}
+                {% if user.account.roles == "Admin" %}
+                  <span class="px-3 py-1 text-xs rounded-full bg-[#391C8C] text-white">
+                    Admin
+                  </span>
+                {% else %}
+                  <span class="px-3 py-1 text-xs rounded-full bg-gray-300 text-gray-800">
+                    User
+                  </span>
+                {% endif %}
+              {% else %}
+                <span class="text-red-600">No Profile</span>
+              {% endif %}
+            </td>
+
+            <!-- Actions -->
+            <td class="py-3 px-4 text-right">
+
+              {% if user.account %}
+                {% if user.account.roles == "Admin" %}
+                  {% if user != request.user %}
+                    <a href="{% url 'account:remove_admin' user.id %}"
+                       class="px-4 py-1 text-sm border border-red-500 text-red-500 rounded-md hover:bg-red-500 hover:text-white transition">
+                      Remove Admin
+                    </a>
+                  {% else %}
+                    <span class="text-gray-400 text-xs italic">You</span>
+                  {% endif %}
+                {% else %}
+                  <a href="{% url 'account:make_admin' user.id %}"
+                     class="px-4 py-1 text-sm border border-[#391C8C] text-[#391C8C] rounded-md hover:bg-[#391C8C] hover:text-white transition">
+                    Make Admin
+                  </a>
+                {% endif %}
+              {% else %}
+                <span class="text-red-600">N/A</span>
+              {% endif %}
+
+            </td>
+
+          </tr>
+          {% endfor %}
+
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>{% if form.instance.pk %}Edit Review{% else %}Tulis Review{% endif %}</h3>
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-primary">Kirim</button>
+
+  {% if form.instance.pk %}
+    <a href="{% url 'detail_product:show_detail' form.instance.product.pk %}" class="btn btn-secondary">Batal</a>
+  {% else %}
+    <a href="javascript:history.back()" class="btn btn-secondary ms-2">Batal</a>
+  {% endif %}
+</form>
+{% endblock %}

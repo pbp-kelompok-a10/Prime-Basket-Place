@@ -29,7 +29,7 @@ Aplikasi ini menawarkan tempat untuk beragam alat-alat basket yang bisa dibeli a
 ---
 
 ### 🔐 **Account**
-
+Dikerjakan oleh Iqbal Rafi Nuryana
 🧠 **Deskripsi:**  
 Modul Account berfungsi sebagai pusat identitas dan aktivitas pengguna di **Prime Basket Place**.  
 Di dalam modul ini, pengguna dapat melakukan berbagai hal seperti mengelola profil pribadi, melihat riwayat transaksi pembelian maupun penjualan alat basket, serta memantau produk yang pernah mereka ulas atau sukai.  
@@ -57,7 +57,7 @@ Di dalam modul ini, pengguna dapat melakukan berbagai hal seperti mengelola prof
 ---
 
 ### 🏠 **Homepage**
-
+Dikerjakan oleh Michael Stephen Daniel Panjaitan
 🧠 **Deskripsi:**  
 Aplikasi ini menampilkan halaman utama berisi produk-produk olahraga basket di toko.  
 Antarmuka dilengkapi dengan fitur pencarian, pemfilteran, dan pengurutan produk agar pengguna dapat menemukan produk yang diinginkan.  
@@ -80,7 +80,7 @@ Terdapat pula fitur *slider* untuk menampilkan produk-produk populer, direkomend
 ---
 
 ### 🧭 **Dashboard Product**
-
+Dikerjakan oleh Farras Syafiq Ulumuddin
 🧠 **Deskripsi:**  
 Modul ini menyediakan fitur **CRUD (Create, Read, Update, Delete)** terhadap data produk yang dijual di **Prime Basket Place**.  
 Objek yang diolah adalah **produk perlengkapan basket**.  
@@ -108,7 +108,7 @@ Setiap user yang berjualan hanya bisa mengelola produk miliknya sendiri karena d
 ---
 
 ### ⭐ **Review Product**
-
+Dikerjakan oleh Z Arsy Alam Sin
 🧠 **Deskripsi:**  
 Modul ini memungkinkan pengguna memberikan **ulasan (review)** terhadap produk di **Prime Basket Place**.  
 Setiap review dapat berisi **rating bintang (1–5)**, **komentar**, dan **foto produk** (opsional).  
@@ -135,15 +135,15 @@ Hanya pengguna terdaftar yang bisa menulis review.
 ---
 
 ### 🧾 **Detail Product**
-
+Dikerjakan oleh Rafsanjani
 🧠 **Deskripsi:**  
 Modul ini memuat informasi detail mengenai suatu produk basket.  
-Terdapat fitur **masukkan keranjang** dan **love button** untuk menandai produk favorit.  
+Terdapat **love button** untuk menandai produk favorit.  
 Selain itu, template dari **Review App** ditampilkan di bagian bawah halaman detail produk.  
 
 ⚙️ **Fitur Utama:**  
 - Menampilkan detail lengkap produk.  
-- Tombol **Add to Cart** dan **Love/Favorite**.  
+- Tombol **Love/Favorite**.  
 - Menampilkan review dari pengguna.  
 
 🧾 **CRUD:**

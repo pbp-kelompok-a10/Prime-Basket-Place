@@ -1,12 +1,63 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import csrf_exempt
 from .models import Product
 from .forms import DetailForm
+from reviews.models import Review 
+from account.models import Account
+import json
+from django.http import HttpResponse, JsonResponse
+from django.views.decorators.http import require_POST
+from django.core import serializers
+
+def show_detail_json(request, pk):
+    # Mengambil product berdasarkan ID
+    data = Product.objects.filter(pk=pk)
+    # Mengembalikan data dalam bentuk JSON
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+@csrf_exempt
+def update_description_flutter(request, pk):
+    if request.method == 'POST':
+        try:
+            product = Product.objects.get(pk=pk)
+            # Validasi kepemilikan (opsional, sesuaikan dengan logic bisnis)
+            # if product.user != request.user:
+            #     return JsonResponse({"status": "error", "message": "Unauthorized"}, status=403)
+            
+            data = json.loads(request.body)
+            product.description = data.get('description', product.description)
+            product.save()
+            return JsonResponse({"status": "success", "message": "Deskripsi berhasil diupdate!"}, status=200)
+        except Product.DoesNotExist:
+            return JsonResponse({"status": "error", "message": "Produk tidak ditemukan"}, status=404)
+    return JsonResponse({"status": "error", "message": "Method not allowed"}, status=401)
+
+def show_all_json(request):
+    # Mengambil SEMUA data product
+    data = Product.objects.all()
+    # Mengembalikan data dalam bentuk JSON
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 def show_detail(request, pk):
-    product = get_object_or_404(Product, pk=pk)
+    product = get_object_or_404(Product.objects.prefetch_related('reviews__user'), pk=pk)
     form = DetailForm(instance=product)
-    context = { 'product': product, 'form': form }
+
+    user_has_reviewed = False
+    is_favorite = False 
+    if request.user.is_authenticated:
+        user_has_reviewed = Review.objects.filter(product=product, user=request.user).exists()
+        
+        # Cek apakah produk ini ada di daftar favorit user
+        account, created = Account.objects.get_or_create(user=request.user)
+        is_favorite = product in account.favorites.all()
+
+    context = {
+        'product': product,
+        'form': form,
+        'user_has_reviewed': user_has_reviewed,
+        'is_favorite': is_favorite, 
+    }
     return render(request, 'detail_product/product_detail.html', context)
 
 @login_required
@@ -15,7 +66,7 @@ def update_or_create_detail(request, pk):
     if request.method == 'POST':
         form = DetailForm(request.POST, instance=product)
         if form.is_valid():
-            form.save()
+            form.save() 
     return redirect('detail_product:show_detail', pk=pk)
 
 @login_required

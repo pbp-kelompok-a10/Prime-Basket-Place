@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Prime Basket Place{% endblock title %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         
@@ -21,6 +21,12 @@
         .focus\:ring-custom-purple:focus { --tw-ring-color: #4F00C1; }
 
         .text-custom-yellow { color: #FFC72C; } /* Gold/Yellow color for "BASKET" */
+        .card-product-bg-yellow {background-color: #FBC535;} /* Yellow background for product cards */
+
+		html {
+			scroll-behavior: smooth;
+		}
+
     </style>
 </head>
 <body class="text-gray-800">
@@ -35,6 +41,19 @@
     <footer class="text-center p-8 mt-16 text-gray-500 text-sm">
         <p>&copy; {% now "Y" %} Prime Basket Place. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>
