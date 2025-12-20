@@ -232,7 +232,7 @@ def delete_account(request):
 
     return redirect("account:show_profile")
 
-def show_allJson(request):
+def account_json(request):
     # Mengambil SEMUA data account
     data = Account.objects.all()
     # Mengembalikan data dalam bentuk JSON

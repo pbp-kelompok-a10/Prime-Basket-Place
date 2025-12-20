@@ -17,6 +17,6 @@ urlpatterns = [
     path('make-admin/<int:user_id>/', views.make_admin, name='make_admin'),
     path('remove-admin/<int:user_id>/', views.remove_admin, name='remove_admin'),
     path('create-admin/', views.create_admin, name='create_admin'),
-    path('json/', views.show_allJson, name='show_allJson'),
+    path('json/', views.account_json, name='show_allJson'),
     path('proxy-image/', views.proxy_image, name='proxy_image'),
 ]
