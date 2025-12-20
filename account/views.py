@@ -7,7 +7,9 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.contrib.auth.models import User
 import datetime
-
+import requests
+from django.core import serializers
+from django.http import HttpResponse
 from account.models import Account
 from account.forms import AccountForm
 from account.decorators import admin_required
@@ -98,7 +100,6 @@ def show_profile(request):
     }
     return render(request, "account_view.html", context)
 
-
 def register_user(request):
     if request.user.is_authenticated:
         return redirect("account:show_profile")
@@ -114,7 +115,6 @@ def register_user(request):
         form = UserCreationForm()
 
     return render(request, "register.html", {"form": form})
-
 
 def login_user(request):
     if request.user.is_authenticated:
@@ -231,3 +231,27 @@ def delete_account(request):
         return redirect("account:login")
 
     return redirect("account:show_profile")
+
+def show_allJson(request):
+    # Mengambil SEMUA data account
+    data = Account.objects.all()
+    # Mengembalikan data dalam bentuk JSON
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+def proxy_image(request):
+    image_url = request.GET.get('url')
+    if not image_url:
+        return HttpResponse('No URL provided', status=400)
+    
+    try:
+        # Fetch image from external source
+        response = requests.get(image_url, timeout=10)
+        response.raise_for_status()
+        
+        # Return the image with proper content type
+        return HttpResponse(
+            response.content,
+            content_type=response.headers.get('Content-Type', 'image/jpeg')
+        )
+    except requests.RequestException as e:
+        return HttpResponse(f'Error fetching image: {str(e)}', status=500)

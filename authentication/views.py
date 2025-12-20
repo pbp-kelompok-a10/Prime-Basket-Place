@@ -40,17 +40,25 @@ def login(request):
             "status": False,
             "message": "Login failed, account is disabled."
         }, status=401)
+        
+    account, created = Account.objects.get_or_create(user=user,
+                                                     defaults={
+                                                       'nickname': '',
+                                                       'age': None,
+                                                       'profile_picture': '',
+                                                       'roles': 'User'
+                                                   })
 
     # Login OK
     auth_login(request, user)
 
     return JsonResponse({
         "username": user.username,
-        "nickname": user.account.nickname,
-        "age": user.account.age,
-        "profile_picture": user.account.profile_picture,
-        "favorites": list(user.account.favorites.values_list('id', flat=True)),
-        "role": user.account.roles,
+        "nickname": account.nickname,
+        "age": account.age,
+        "profile_picture": account.profile_picture,
+        "favorites": list(account.favorites.values_list('id', flat=True)),
+        "role": account.roles,
         "status": True,
         "message": "Login successful!"
     }, status=200)
