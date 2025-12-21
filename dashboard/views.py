@@ -72,7 +72,14 @@ def delete_product(request, id):
 #     return render(request, "detail_product.html", context)
 
 def show_json_dashboard(request):
-    product_list = Product.objects.filter(user=request.user)
+    user = request.user
+    userAcc, _ = Account.objects.get_or_create(user=user)
+    
+    if (userAcc.roles == "Admin"):
+        product_list = Product.objects.all()
+    else:
+        product_list = Product.objects.filter(user=request.user)
+        
     json_data = serializers.serialize("json", product_list)
     return HttpResponse(json_data, content_type="application/json")
 
@@ -139,3 +146,87 @@ def create_product_flutter(request):
             },
             status=400
         )
+        
+@csrf_exempt
+def update_product_flutter(request, id):
+    if request.method == "POST":
+        data = json.loads(request.body)
+        fields = data.get("fields", {})
+
+        product = get_object_or_404(Product, pk=id)
+
+        product.name = fields.get("name", product.name)
+        product.brand = fields.get("brand", product.brand)
+        product.category = fields.get("category", product.category)
+        product.price = fields.get("price", product.price)
+        product.image_url = fields.get("image_url", product.image_url)
+        product.description = fields.get("description", product.description)
+
+        product.save()
+
+        return JsonResponse({
+            "status": "success",
+            "message": "Product updated"
+        })
+
+    return JsonResponse({
+        "status": "error",
+        "message": "Invalid method"
+    }, status=405)
+    
+def delete_product_flutter(request, id):
+    if request.method != "POST":
+        return JsonResponse({
+            "status": "error",
+            "message": "Invalid method"
+        }, status=405)
+
+    product = get_object_or_404(Product, pk=id)
+    user = request.user
+    userAcc, _ = Account.objects.get_or_create(user=user)
+
+    # Check if the user is the owner or admin
+    if request.user != product.user and (userAcc.roles != "Admin"):
+        return JsonResponse({
+            "status": "error",
+            "message": "You do not have permission to delete this product"
+        }, status=403)
+
+    product.delete()
+    return JsonResponse({
+        "status": "success",
+        "message": "Product deleted"
+    })
+    
+# favorite
+def toggle_favorite_flutter(request, product_id):
+    if request.method != "POST":
+        return JsonResponse({
+            "status": "error",
+            "message": "Invalid method"
+        }, status=405)
+
+    product = get_object_or_404(Product, id=product_id)
+
+    try:
+        account = Account.objects.get(user=request.user)
+    except Account.DoesNotExist:
+        return JsonResponse({
+            "status": "error",
+            "message": "Account not found"
+        }, status=403)
+
+    if product in account.favorites.all():
+        account.favorites.remove(product)
+        action = "removed"
+    else:
+        account.favorites.add(product)
+        action = "added"
+
+    return JsonResponse({
+        "status": "success",
+        "message": f'Product "{product.name}" {action} from favorites.',
+        "favorite": action == "added"
+    })
+    
+

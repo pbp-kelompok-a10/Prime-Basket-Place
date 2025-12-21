@@ -12,4 +12,7 @@ urlpatterns = [
     path('json/', show_json_dashboard, name='show_json_dashboard'),
     path('proxy-image/', proxy_image, name='proxy_image'),
     path('create-product-flutter/', create_product_flutter, name='create_product_flutter'),
+    path("update-product/<int:id>/", update_product_flutter, name='update_product_flutter'),
+    path("delete-product/<int:id>/", delete_product_flutter, name='delete_product_flutter'),
+    path("toggle-favorite/<int:id>/", toggle_favorite_flutter, name='toggle_favorite_flutter'),
 ]
