@@ -1,5 +1,3 @@
-# Homepage/views.py
-
 from django.shortcuts import render, redirect, get_object_or_404
 from detail_product.models import Product
 from .models import SliderProduct
@@ -8,6 +6,8 @@ from django.db.models import Q
 from django.http import HttpResponse, JsonResponse
 from django.core import serializers
 from detail_product.models import Product
+from django.contrib.auth.decorators import login_required
+from account.decorators import admin_required
 
 def show_json(request):
     # Mengambil semua produk yang sudah di-load ke database
@@ -43,6 +43,8 @@ def show_main(request):
     }
     return render(request, "homepage.html", context)
 
+@login_required(login_url='account:login')
+@admin_required
 def manage_slider(request):
     slider_products = SliderProduct.objects.all()
 
@@ -61,6 +63,8 @@ def manage_slider(request):
     }
     return render(request, 'manage_slider.html', context)
 
+@login_required(login_url='account:login')
+@admin_required
 def delete_slider_product(request, id):
     product = get_object_or_404(SliderProduct, id=id)
     product.delete()
