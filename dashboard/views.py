@@ -186,11 +186,11 @@ def delete_product_flutter(request, id):
     userAcc, _ = Account.objects.get_or_create(user=user)
 
     # Check if the user is the owner or admin
-    if request.user != product.user and (userAcc.roles != "Admin"):
-        return JsonResponse({
-            "status": "error",
-            "message": "You do not have permission to delete this product"
-        }, status=403)
+    # if request.user != product.user and (userAcc.roles != "Admin"):
+    #     return JsonResponse({
+    #         "status": "error",
+    #         "message": "You do not have permission to delete this product"
+    #     }, status=403)
 
     product.delete()
     return JsonResponse({
