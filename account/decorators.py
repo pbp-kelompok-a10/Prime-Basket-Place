@@ -1,10 +1,12 @@
 from django.shortcuts import redirect
 from django.contrib import messages
+from functools import wraps
 
 def admin_required(view_func):
+    @wraps(view_func)
     def wrapper(request, *args, **kwargs):
         # aman walau user belum punya account
-        if not hasattr(request.user, "account") or not request.user.account.is_admin:
+        if not hasattr(request.user, "account") or not request.user.account.is_admin():
             messages.error(request, "You do not have permission to access this page.")
             return redirect("account:show_profile")
         return view_func(request, *args, **kwargs)
